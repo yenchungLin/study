@@ -1,9 +1,9 @@
 # _**DSA**_
-## WEEK 2
+## WEEK 1
 ### linked_list
-## WEEK 3
+## WEEK 2
 ### * stack
 ### * queue
-## WEEK 4
+## WEEK 3
 ### * sort
 ### * insertion_sort
