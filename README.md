@@ -7,4 +7,4 @@
 ## WEEK 3
 ### sort
 ### insertion_sort
-### qui
+### quick_sort
