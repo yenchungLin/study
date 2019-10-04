@@ -2,8 +2,9 @@
 ## WEEK 1
 ### linked_list
 ## WEEK 2
-### * stack
-### * queue
+### stack
+### queue
 ## WEEK 3
-### * sort
-### * insertion_sort
+### sort
+### insertion_sort
+### qui
