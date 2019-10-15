@@ -15,3 +15,5 @@ Linked_list的運作方式可分為：1.走訪2.增加節點3.刪除節點
 ### insertion_sort(插入排序法)
 
 ### quick_sort
+
+###HW:quick_sort
