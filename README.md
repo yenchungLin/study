@@ -15,7 +15,7 @@ Linked_list的運作方式可分為：1.走訪2.增加節點3.刪除節點
 [stack](https://github.com/yenchungLin/study/blob/master/WEEK%202/stack.py)
 後進先出的資料型態結構。像自助餐盤一樣，餐盤疊起來後，使用時會拿最上端的那個。五個基本工作定義：1.create:建立一個空堆2.push:存放頂端資料，回傳新堆疊3.pop:刪除頂端資料，並回傳新堆疊4.isEmpty:判斷堆疊是否為空堆疊5.full:判斷堆疊是否已滿
 ### queue
-[queue](WEEK 1/linked_list.py)
+[queue](https://github.com/yenchungLin/study/blob/master/WEEK%202/queue.py)
 先進先出的資料型態結構。像過票一樣，前面的人通過，後面的人才能通過。五個基本工作定義：1.create:建立一個空佇列2.add:將資料加入尾端，回傳新佇列3.delete: :將資料尾端刪除，回傳新佇列4.front:回傳前端的值5.empty:佇列是否為空集合
 ## WEEK 3
 ### sort
