@@ -16,4 +16,7 @@ Linked_list的運作方式可分為：1.走訪2.增加節點3.刪除節點
 
 ### quick_sort
 在一串數列中找一個基準值，然後將數列中的數值與基準值進行比大小，將小於基準值歸類在基準值到左邊，大於基準值歸類在基準值到右邊，就能夠找出基準值在數列中的哪個位置。然後將心分好的這兩群中，在各別選新的基準值，重複上輪的比較。
-###HW:quick_sort
+
+## #HW:quick_sort
+[HW1_QuickSort(1018)](https://nbviewer.jupyter.org/github/zhaoqieyu/LearningNotes/blob/master/04_Quick%20Sort/HW1_QuickSort%281018%29.ipynb)、
+[流程圖](https://github.com/zhaoqieyu/LearningNotes/blob/master/04_Quick%20Sort/%E6%B5%81%E7%A8%8B%E5%9C%96.jpg)
