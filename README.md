@@ -20,7 +20,7 @@ Linked_list的運作方式可分為：1.走訪2.增加節點3.刪除節點
 ## WEEK 3
 ### sort
 ###insertion_sort(插入排序法)
-[insertion_sort(插入排序法)](WEEK 1/linked_list.py)
+[insertion_sort(插入排序法)](https://github.com/yenchungLin/study/blob/master/WEEK%203/SetMismatch.py)
 
 ### quick_sort
 [quick_sort](WEEK 1/linked_list.py)
