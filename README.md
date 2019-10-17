@@ -1,4 +1,8 @@
 # _**DSA**_
+##目錄：
+[WEEK1:linked_list]()
+[WEEK2:stack、queue]()
+[WEEK3insertion_sort、quick_sort]()
 ## WEEK 1
 ### linked_list
 利用電腦中記憶體是不連續的、隨機的方式，已結點連結的方式進行資料儲存。
