@@ -1,7 +1,7 @@
 # _**DSA**_
 目錄：
 [WEEK1:linked_list](https://github.com/yenchungLin/study/tree/master/WEEK%201)
-[WEEK2:stack、queue]()
+[WEEK2:stack、queue](https://github.com/yenchungLin/study/tree/master/WEEK%202)
 [WEEK3insertion_sort、quick_sort]()
 ## WEEK 1
 ### linked_list
