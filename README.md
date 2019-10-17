@@ -2,7 +2,7 @@
 目錄：
 [WEEK1:linked_list](https://github.com/yenchungLin/study/tree/master/WEEK%201)
 [WEEK2:stack、queue](https://github.com/yenchungLin/study/tree/master/WEEK%202)
-[WEEK3insertion_sort、quick_sort]()
+[WEEK3insertion_sort、quick_sort](https://github.com/yenchungLin/study/tree/master/WEEK%203)
 ## WEEK 1
 ### linked_list
 [linked_list](WEEK 1/linked_list.py)
