@@ -1,16 +1,15 @@
 # _**DSA**_
 目錄：
-[WEEK1:linked_list](https://github.com/yenchungLin/study/tree/master/WEEK%201)
-[WEEK2:stack、queue](https://github.com/yenchungLin/study/tree/master/WEEK%202)
-[WEEK3insertion_sort、quick_sort](https://github.com/yenchungLin/study/tree/master/WEEK%203)
+*   [WEEK1:linked_list](https://github.com/yenchungLin/study/tree/master/WEEK%201)
+*   [WEEK2:stack、queue](https://github.com/yenchungLin/study/tree/master/WEEK%202)
+*   [WEEK3insertion_sort、quick_sort](https://github.com/yenchungLin/study/tree/master/WEEK%203)
 ## WEEK 1
 ### linked_list
 [linked_list](https://github.com/yenchungLin/study/blob/master/WEEK%201/linked_list.py)
 利用電腦中記憶體是不連續的、隨機的方式，已結點連結的方式進行資料儲存。
 優點是插入即刪除資料方便。
 缺點是無法像靜態資料隨機讀取資料，需要透過依循的方式找到資料。
-Linked_list的運作方式可分為：
-⋅⋅⋅* 走訪2.增加節點3.刪除節點
+Linked_list的運作方式可分為：1.走訪2.增加節點3.刪除節點
 ## WEEK 2
 ### stack
 [stack](https://github.com/yenchungLin/study/blob/master/WEEK%202/stack.py)
