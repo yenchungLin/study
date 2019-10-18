@@ -35,7 +35,7 @@ Linked_list的運作方式可分為：1.走訪2.增加節點3.刪除節點
 ### heap_sort
 [heap](https://github.com/yenchungLin/study/blob/master/WEEK4/heap.py)可分為min heap與max heap。
 min heap:頂端的樹根最小，且母節點的直橫小於等於子結點。
-max heap:頂端的樹根最大，且母節點的直橫大於等於子結點。
+max heap:頂端的樹根最大，且母節點的直橫大於等於子結點。[流程圖](https://github.com/yenchungLin/study/blob/master/picture/heap_sort.png)
 ## WEEK 5
 ### merge_sort
 
