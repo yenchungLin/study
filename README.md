@@ -2,7 +2,9 @@
 ## 目錄：
 *   [WEEK1:linked_list](https://github.com/yenchungLin/study/tree/master/WEEK%201)
 *   [WEEK2:stack、queue](https://github.com/yenchungLin/study/tree/master/WEEK%202)
-*   [WEEK3insertion_sort、quick_sort](https://github.com/yenchungLin/study/tree/master/WEEK%203)
+*   [WEEK3：insertion_sort、quick_sort](https://github.com/yenchungLin/study/tree/master/WEEK%203)
+*   [WEEK4：heap_sort](https://github.com/yenchungLin/study/tree/master/WEEK%204)
+
 ## WEEK 1
 ### [linked_list](https://github.com/yenchungLin/study/blob/master/WEEK%201/linked_list.py)
 
