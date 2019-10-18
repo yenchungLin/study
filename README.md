@@ -1,6 +1,6 @@
 # _**資料結構與演算法**_
 ## 目錄：
-*   [WEEK1](#WEEK 1)：linked_list
+*   [WEEK1](https://github.com/yenchungLin/study#week-1)：linked_list
 *   WEEK2：stack、queue
 *   WEEK3：insertion_sort、quick_sort(HW1)
 *   WEEK4：heap_sort
