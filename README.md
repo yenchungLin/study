@@ -2,7 +2,7 @@
 ## 目錄：
 *   [WEEK1：linked_list](https://github.com/yenchungLin/study/tree/master/WEEK%201)
 *   [WEEK2：stack、queue](https://github.com/yenchungLin/study/tree/master/WEEK%202)
-*   [WEEK3：insertion_sort、quick_sort](https://github.com/yenchungLin/study/tree/master/WEEK%203)
+*   [WEEK3：insertion_sort、quick_sort(HW1)](https://github.com/yenchungLin/study/tree/master/WEEK%203)
 *   [WEEK4：heap_sort](https://github.com/yenchungLin/study/tree/master/WEEK%204)
 
 ## WEEK 1
@@ -18,20 +18,20 @@ Linked_list的運作方式可分為：
 
 後進先出的資料型態結構。像自助餐盤一樣，餐盤疊起來後，使用時會拿最上端的那個。     
 五個基本工作定義：      
-*   create:建立一個空堆
-*   push:存放頂端資料，回傳新堆疊
-*   pop:刪除頂端資料，並回傳新堆疊
-*   isEmpty:判斷堆疊是否為空堆疊
-*   full:判斷堆疊是否已滿
+*   create : 建立一個空堆
+*   push : 存放頂端資料，回傳新堆疊
+*   pop : 刪除頂端資料，並回傳新堆疊
+*   isEmpty : 判斷堆疊是否為空堆疊
+*   full : 判斷堆疊是否已滿
 ### [queue](https://github.com/yenchungLin/study/blob/master/WEEK%202/queue.py)
 
 先進先出的資料型態結構。像過票一樣，前面的人通過，後面的人才能通過。   
 五個基本工作定義：     
-*   create:建立一個空佇列
-*   add:將資料加入尾端，回傳新佇列
-*   delete:將資料尾端刪除，回傳新佇列
-*   front:回傳前端的值
-*   empty:佇列是否為空集合
+*   create : 建立一個空佇列
+*   add : 將資料加入尾端，回傳新佇列
+*   delete : 將資料尾端刪除，回傳新佇列
+*   front : 回傳前端的值
+*   empty : 佇列是否為空集合
 ## WEEK 3
 
 ### [insertion_sort](https://github.com/yenchungLin/study/blob/master/WEEK%203/SetMismatch.py)
