@@ -55,3 +55,5 @@ Linked_list的運作方式可分為：
 ### merge_sort
 
 ## sort比較
+|  | 平均時間 | 最差時間 | Extra Space | 穩定度     
+| --- | --- | --- | --- | --- |
