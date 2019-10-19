@@ -55,12 +55,4 @@ Linked_list的運作方式可分為：
 ### merge_sort
 
 ## sort比較
- | 平均時間 | 最佳時間 | 最差時間 ｜ Extra Space | 穩定度 
-  Bubble_sort | O(n^2) | O(n) | O(n^2) | O(1) | 穩定 
-  Insertion_sort | O(n^2) | O(n) | O(n^2) | O(1) | 穩定 
-  Selection_sort | O(n^2) | O(n^2) | O(n^2) | O(1) | 不穩定 
-  Quick_sort | O(n log n) | O(n log n) | O(n^2) | O(n) | 不穩定 
-  Merge_sort | O(n log n) | O(n log n) | O(n log n) | O(n) | 穩定 
-  Heap_sort | O(n log n) | O(n log n) | O(n log n) | O(1) | 不穩定 
-  Radix_sort | O(n) | O(n) | O(n) | O(n)) | 穩定 
-  Counting_sort | O(n) | O(n) | O(n) | O(o+k) | 穩定 
+ | 平均時間 | 最佳時間 | 最差時間 | Extra Space | 穩定度
