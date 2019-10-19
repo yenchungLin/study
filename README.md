@@ -1,10 +1,11 @@
 # _**資料結構與演算法**_
 ## 目錄：
-*   [WEEK1](https://github.com/yenchungLin/study#week-1)：linked_list
-*   [WEEK2](https://github.com/yenchungLin/study#week-2)：stack、queue
-*   [WEEK3](https://github.com/yenchungLin/study#week-3)：insertion_sort、quick_sort(HW1)
-*   [WEEK4](https://github.com/yenchungLin/study#week-4)：heap_sort
-*   [WEEK5](https://github.com/yenchungLin/study#week-5)
+> *   [WEEK1](https://github.com/yenchungLin/study#week-1)：linked_list
+> *   [WEEK2](https://github.com/yenchungLin/study#week-2)：stack、queue
+> *   [WEEK3](https://github.com/yenchungLin/study#week-3)：insertion_sort、quick_sort(HW1)
+> *   [WEEK4](https://github.com/yenchungLin/study#week-4)：heap_sort
+> *   [WEEK5](https://github.com/yenchungLin/study#week-5)
+> *   [sort比較]
 
 ## [WEEK 1](https://github.com/yenchungLin/study/tree/master/WEEK%201)
 ### [linked_list](https://github.com/yenchungLin/study/blob/master/WEEK%201/linked_list.py)
@@ -53,3 +54,13 @@ Linked_list的運作方式可分為：
 ## WEEK 5
 ### merge_sort
 
+## sort比較
+ | 平均時間 | 最佳時間 | 最差時間 ｜ Extra Space | 穩定度 
+  Bubble_sort | O(n^2) | O(n) | O(n^2) | O(1) | 穩定 
+  Insertion_sort | O(n^2) | O(n) | O(n^2) | O(1) | 穩定 
+  Selection_sort | O(n^2) | O(n^2) | O(n^2) | O(1) | 不穩定 
+  Quick_sort | O(n log n) | O(n log n) | O(n^2) | O(n) | 不穩定 
+  Merge_sort | O(n log n) | O(n log n) | O(n log n) | O(n) | 穩定 
+  Heap_sort | O(n log n) | O(n log n) | O(n log n) | O(1) | 不穩定 
+  Radix_sort | O(n) | O(n) | O(n) | O(n)) | 穩定 
+  Counting_sort | O(n) | O(n) | O(n) | O(o+k) | 穩定 
