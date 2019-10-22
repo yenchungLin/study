@@ -42,9 +42,9 @@ Linked_list的運作方式可分為：
 
 ### [quick_sort](https://nbviewer.jupyter.org/github/yenchungLin/study/blob/master/homework助教請開/HW1_quick_sort.ipynb)
 > 在一串數列中找一個基準值，然後將數列中的數值與基準值進行比大小，將小於基準值歸類在基準值到左邊，大於基準值歸類在基準值到右邊，就能夠找出基準值在數列中的哪個位置。然後將心分好的這兩群中，在各別選新的基準值，重複上輪的比較。    
->> *   [流程圖](https://github.com/yenchungLin/study/blob/master/picture/quick_sort.png)      
->> *   [流程圖2](https://github.com/yenchungLin/study/blob/master/picture/quick_sort2.png)     
->> *   [心得](https://github.com/yenchungLin/study/blob/master/心得/quick_sort心得.txt)
+>> *   [流程圖](https://github.com/yenchungLin/study/blob/master/homework助教請開/HW1/quick_sort.png)      
+>> *   [流程圖2](https://github.com/yenchungLin/study/blob/master/homework助教請開/HW1/quick_sort2.png)     
+>> *   [心得](https://github.com/yenchungLin/study/blob/master/homework助教請開/HW1/quick_sort心得.txt)
 ## [WEEK 4](https://github.com/yenchungLin/study/tree/master/WEEK%204)
 ### heap_sort
 > [heap](https://github.com/yenchungLin/study/blob/master/WEEK4/heap.py)可分為min heap與max heap。      
