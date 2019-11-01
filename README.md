@@ -47,7 +47,7 @@ Linked_list的運作方式可分為：
 >> *   [流程圖2](https://github.com/yenchungLin/study/blob/master/homework助教請開/HW1/quick_sort2.png)     
 >> *   [心得](https://github.com/yenchungLin/study/blob/master/homework助教請開/HW1/quick_sort心得.txt)
 ## [WEEK 4](https://github.com/yenchungLin/study/tree/master/WEEK%204)
-### heap_sort
+### [heap_sort](https://nbviewer.jupyter.org/github/yenchungLin/study/blob/master/homework助教請開/HW1/HW2_heap_sort.py)
 > [heap](https://github.com/yenchungLin/study/blob/master/WEEK4/heap.py)可分為min heap與max heap。heap_sort則是利用母節點與子結點進行大小比較排序。      
 >> *   min heap:頂端的樹根最小，且母節點的直橫小於等於子結點。    
 >> *   max heap:頂端的樹根最大，且母節點的直橫大於等於子結點。     
