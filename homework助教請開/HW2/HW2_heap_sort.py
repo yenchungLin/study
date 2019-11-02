@@ -1,15 +1,15 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# [流程圖](https://github.com/yenchungLin/study/blob/master/picture/heap_sort/heap_sort.png)    
+# ![流程圖](https://github.com/yenchungLin/study/blob/master/picture/heap_sort/heap_sort.png)    
 # 首先，我去觀察母節點與子結點的關係是什麼，令母節點的index為i。發現左邊子結點的index為兩倍的母節點加一(2i+1)，右邊子節點為兩倍的母節點加二(2i+2)。  
-# [index](https://github.com/yenchungLin/study/blob/master/picture/heap_sort/heap_sort_index.jpg) 
+# ![index](https://github.com/yenchungLin/study/blob/master/picture/heap_sort/heap_sort_index.jpg) 
 # 再來，我要去找說究竟有幾個母子關係，也就是說要比幾次。我發現說，總數(n)除以2可以得到說要比幾次母子節點，然後由後往前比。那可能會遇到兩種狀況，第一種是(n/2)餘數為1，表示說最後一個母子節點的關係為：一個母節點、兩個子節點。第二個狀況是(n/2)餘數為0，表示說最後一個母子節點的關係為：一個母節點、一個子節點。       
 # 狀況一下面有三個小狀況：小狀況一為母節點最大，則不需要交換。小狀況二左邊子節點最大，需要與母節點交換。小狀況三右邊子節點最大，需要與母節點交換。        
-# [狀況一](https://github.com/yenchungLin/study/blob/master/picture/heap_sort/heap_sort_way1.jpg)     
+# ![狀況一](https://github.com/yenchungLin/study/blob/master/picture/heap_sort/heap_sort_way1.jpg)     
 # 狀況二下面有兩個小狀況：小狀況一為母節點最大，則不需要交換。小狀況二左邊子節點最大，需要與母節點交換。
 # 最後我將比出來最大的數移到樹枝末端，然後把它加到新的數列中，並刪除在原有數列中的值。而得到的第二個數就直接指定加在新數列的第一位。所有處理完後，回傳新數列。     
-# [狀況二](https://github.com/yenchungLin/study/blob/master/picture/heap_sort/heap_sort_way2.jpg) 
+# ![狀況二](https://github.com/yenchungLin/study/blob/master/picture/heap_sort/heap_sort_way2.jpg) 
 
 # In[1]:
 
