@@ -1,4 +1,4 @@
-#因為程式碼尚未加上class，所以要看程式碼請拉到最下方
+#若要執行程式碼請拉到最下方，但是class的死法還是不熟悉，還在努力研究中。
 
 #在上課的時候，從影片中了解到寫merge_sort有兩個部分。     
 #第一個部分是分組:將數列折半折半在折半，分別加入左半與右半部分，直到最後沒辦法折半時停止。分成兩個狀況，狀況一:若數列奇數時，將中間的數字分到前半部分。狀況二:如果是偶數就直接對分。  
@@ -305,6 +305,7 @@ def merge_sort(a):
         #print("final_right = ",right)
         #print(final_left,final_right)
         return merge
+    
 def merge(left,right):
     M = [0]*(len(left)+len(right)) #新存放數列的地方
     m = 0
