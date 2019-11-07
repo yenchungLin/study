@@ -434,6 +434,6 @@ a
 
 # In[ ]:
 
-
+#資料處理的時間為O(n log n)與quick_sort比起來較穩定，因為heap_sort不會受到選到基準點的好壞影響
 
 
