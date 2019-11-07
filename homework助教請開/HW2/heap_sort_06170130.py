@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-#因為程式碼尚未加上class，所以要看程式碼請拉到最下方
+#程式碼執行請拉至下方
 
 #[流程圖](https://github.com/yenchungLin/study/blob/master/picture/heap_sort/heap_sort.png)    
 # 首先，我去觀察母節點與子結點的關係是什麼，令母節點的index為i。發現左邊子結點的index為兩倍的母節點加一(2i+1)，右邊子節點為兩倍的母節點加二(2i+2)。  
@@ -314,7 +314,7 @@ heap_sort(a)
 # 狀況二：一個母節點與兩個子節點，這個狀況發生在k！＝n時，或是長度不能被二整除時。
 
 # In[20]:
-
+#HEAP_SORT程式碼執行地方
 
 a = [38,16,41,72,52,98,63]
 
@@ -378,10 +378,10 @@ heap_sort(a)
 
 # In[1]:
 
-
+#我在套上class的地方，執行上有些問題，可能是還對class於法不熟悉，還在繼續研究中。
 #heap_sort
 class Solution(object):
-    def heap_sort(a):
+    def heap_sort(self):
         #若為一個或是空值
         if len(a) <2:
             return a
