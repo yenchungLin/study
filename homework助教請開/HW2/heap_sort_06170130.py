@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-#因為程式碼尚未加上class，所以要看程式碼請辣到最下方
+#因為程式碼尚未加上class，所以要看程式碼請拉到最下方
 
 #[流程圖](https://github.com/yenchungLin/study/blob/master/picture/heap_sort/heap_sort.png)    
 # 首先，我去觀察母節點與子結點的關係是什麼，令母節點的index為i。發現左邊子結點的index為兩倍的母節點加一(2i+1)，右邊子節點為兩倍的母節點加二(2i+2)。  
