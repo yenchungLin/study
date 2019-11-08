@@ -381,51 +381,52 @@ heap_sort(a)
 #我在套上class的地方，執行上有些問題，可能是還對class於法不熟悉，還在繼續研究中。
 #heap_sort
 class Solution(object):
-    def heap_sort(self):
+    def heap_sort(self,j):
         #若為一個或是空值
-        if len(a) <2:
+        if len(self) <2:
             return a
         #若不為一個或是空值
-        if len(a)>=2:
+        if len(self)>=2:
 
             #算要比幾次母子節點
-            for j in range(0,len(a)):
-                n = (len(a)-j)//2
+            for j in range(0,len(self)):
+                n = (len(self)-j)//2
                 #由最後一組母子節點比到第一組母子節點
                 for k in range(n-1,-1,-1):
                     #表示有n組母子節點，且為一個母節點與兩個子節點
-                    if k != n-1 or (k==n-1 and (len(a)-j)%2==1):
+                    if k != n-1 or (k==n-1 and (len(self)-j)%2==1):
                         #若母節點大於兩個子節點，則不交換
-                        if a[k] > a[2*k+1] and a[k] > a[2*k+2]:
-                            a[k] = a[k]
+                        if self[k] > self[2*k+1] and self[k] > self[2*k+2]:
+                            self[k] = self[k]
                         #若左邊的子節點最大，則左邊子節點與母節點交換
-                        elif a[2*k+1] > a[k] and a[2*k+1] > a[2*k+2]:
-                            p = a[k]
-                            a[k] = a[2*k+1]
-                            a[2*k+1] = p
+                        elif self[2*k+1] > self[k] and self[2*k+1] > self[2*k+2]:
+                            p = self[k]
+                            self[k] = self[2*k+1]
+                            self[2*k+1] = p
                         #若右邊的子節點最大，則右邊子節點與母節點交換
-                        elif a[2*k+2] > a[k] and a[2*k+2] > a[2*k+1]:
-                            p = a[k]
-                            a[k] = a[2*k+2]
-                            a[2*k+2] = p
+                        elif self[2*k+2] > self[k] and self[2*k+2] > self[2*k+1]:
+                            p = self[k]
+                            self[k] = self[2*k+2]
+                            self[2*k+2] = p
 
                     #表示有n組母子節點，且為一個母節點與一個子節點
-                    elif k == n-1 and (len(a)-j)%2==0:
+                    elif k == n-1 and (len(self)-j)%2==0:
                         #母節點大於子節點，則不交換
-                        if a[k] > a[2*k+1]:
-                            a[k] = a[k]
+                        if self[k] > self[2*k+1]:
+                            self[k] = self[k]
                         #母節點小於子節點，則交換
                         else:
-                            p = a[k]
-                            a[k] = a[2*k+1]
-                            a[2*k+1] = p              
+                            p = self[k]
+                            self[k] = self[2*k+1]
+                            self[2*k+1] = p              
 
-                p = a[0]
-                a[0] = a[len(a)-j-1]
-                a[len(a)-j-1] = p
+                p = self[0]
+                self[0] = self[len(a)-j-1]
+                self[len(a)-j-1] = p
 
-            return a
-
+            return self
+Output = Solution().heap_sort()
+Output
 
 # In[4]:
 
