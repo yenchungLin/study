@@ -431,4 +431,5 @@ class Solutuin(object):
 Output = Solution().merge_sort()
 Output
 
+#說明比較:
 #merge_sort的處理為0(n log n)，處理的穩度度比quick_sort高，因為不售基準點的好壞影響。
