@@ -5,7 +5,8 @@
 > *   [WEEK3](https://github.com/yenchungLin/study#week-3)：insertion_sort、quick_sort(HW1)
 > *   [WEEK4](https://github.com/yenchungLin/study#week-4)：heap_sort
 > *   [WEEK5](https://github.com/yenchungLin/study#week-5) : merge_sort
-> *   [WEEK5](https://github.com/yenchungLin/study#week-6) ：binary_tree
+> *   [WEEK6](https://github.com/yenchungLin/study#week-6) ：binary_tree、binary_search_tree
+> *   [WEEK7](https://github.com/yenchungLin/study#week-7) ：
 
 
 ## [WEEK 1](https://github.com/yenchungLin/study/tree/master/WEEK%201)
@@ -58,5 +59,11 @@ Linked_list的運作方式可分為：
 >> *   [流程圖](https://github.com/yenchungLin/study/blob/master/picture/merge_sort.png)
 ## WEEK 6
 ### binary_tree
+> binary_tree
+>> *   [流程圖]()
+> binary_search_tree
+>> *   [流程圖]()
+## WEEK 7
+### red_black_tree
 > binary_tree
 >> *   [流程圖]()
