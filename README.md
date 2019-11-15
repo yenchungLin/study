@@ -65,13 +65,13 @@ Linked_list的運作方式可分為：
 >> *   [流程圖]()
 ## WEEK 7
 ### red_black_tree
-> red_black_tree因為當binary_search_tree弱化會變成linked_list，red_black_tree要平衡。   
+> red_black_tree因為當binary_search_tree弱化會變成linked_list，red_black_tree要平衡。insert、著色、旋轉（左、右）、delete、search、modify   
 > 特色：
 >> 1.節點為紅色或是黑色，著色動作
 >> 2.root“必為”黑色
 >> 3.父節點是red，子節點為black
 >> 4.父節點是black，子節點為black或red
 >> 5.None為black
->> 6.從頭到尾，black樹木要相同
+>> 6.從頭到尾，每條路徑的black數量要相同
 > 平衡：上一層要長滿，才能長下一層
 >> *   [流程圖]()
