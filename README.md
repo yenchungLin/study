@@ -6,7 +6,7 @@
 > *   [WEEK4](https://github.com/yenchungLin/study#week-4)：heap_sort
 > *   [WEEK5](https://github.com/yenchungLin/study#week-5) : merge_sort
 > *   [WEEK6](https://github.com/yenchungLin/study#week-6) ：binary_tree、binary_search_tree
-> *   [WEEK7](https://github.com/yenchungLin/study#week-7) ：
+> *   [WEEK7](https://github.com/yenchungLin/study#week-7) ：red_black_tree
 
 
 ## [WEEK 1](https://github.com/yenchungLin/study/tree/master/WEEK%201)
@@ -65,5 +65,13 @@ Linked_list的運作方式可分為：
 >> *   [流程圖]()
 ## WEEK 7
 ### red_black_tree
-> binary_tree
+> red_black_tree因為當binary_search_tree弱化會變成linked_list，red_black_tree要平衡。   
+> 特色：
+>> 1.節點為紅色或是黑色，著色動作
+>> 2.root“必為”黑色
+>> 3.父節點是red，子節點為black
+>> 4.父節點是black，子節點為black或red
+>> 5.None為black
+>> 6.從頭到尾，black樹木要相同
+> 平衡：上一層要長滿，才能長下一層
 >> *   [流程圖]()
