@@ -59,8 +59,8 @@ Linked_list的運作方式可分為：
 >> *   [流程圖](https://github.com/yenchungLin/study/blob/master/picture/merge_sort.png)
 ## WEEK 6
 ### binary_tree
-> binary_tree
->> *   [流程圖]()
+> tree
+>> *   ![tree](https://github.com/yenchungLin/study/blob/master/picture/Tree.jpg)
 > binary_search_tree
 >> *   [流程圖]()
 ## WEEK 7
@@ -74,4 +74,3 @@ Linked_list的運作方式可分為：
 >> 5.None為black
 >> 6.從頭到尾，每條路徑的black數量要相同
 > 平衡：上一層要長滿，才能長下一層
->> *   [流程圖]()
