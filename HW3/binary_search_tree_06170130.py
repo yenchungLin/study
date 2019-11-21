@@ -107,5 +107,7 @@ https://www.geeksforgeeks.org/binary-search-tree-set-2-delete/
 http://alrightchiu.github.io/SecondRound/binary-search-tree-searchsou-xun-zi-liao-insertxin-zeng-zi-liao.html
 http://alrightchiu.github.io/SecondRound/binary-search-tree-sortpai-xu-deleteshan-chu-zi-liao.html
 https://www.youtube.com/watch?v=qYo8BVxtoH4
+https://www.youtube.com/watch?v=puyl7MBqPIg
 https://guide.freecodecamp.org/algorithms/binary-search-trees/
+https://www.techiedelight.com/deletion-from-bst/
 """
