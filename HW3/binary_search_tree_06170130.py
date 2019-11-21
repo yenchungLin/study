@@ -59,12 +59,12 @@ class Solution(object):
                 delete_node.val == None
             #刪除為一棵子樹
             elif delete_node.left != None and delete_node.right == None:
-                delete_node.val = delete.left.val
+                root = root.left
             elif delete_node.left == None and delete_node.right != None:
-                delete_node.val = delete.right.val           
+                root = root.right
             #刪除為兩棵子樹
             elif delete_node.left != None and delete_node.right != None:
-                delete_node.val = delete_node.left.val
+                root = root.left
             return self.delete(root,target)
 
     #搜尋(target:要搜尋的值)
@@ -76,7 +76,7 @@ class Solution(object):
         if root.val == target:
             return root
         #節點的值小於要搜尋的值，則需要移到左邊節點，再進行一次搜尋
-        elif root.val < targert:
+        elif root.val < target:
             return self.search(root.left,target)
         #節點的值大於要搜尋的值，則需要移到右邊節點，再進行一次搜尋
         else:
@@ -90,7 +90,7 @@ class Solution(object):
         #如果找到target，則將root.val變成new_val，並再搜尋看看有沒有要改的值
         if root.val == target:
             root.val = new_val
-            return modify(root,val)
+            return self.modify(root,target,new_val)
         #如果root.val < target，則需要移到左邊節點，再進行一次搜尋
         elif root.val < target:
             return self.modify(root.left,target,new_val)
@@ -98,16 +98,9 @@ class Solution(object):
         else:
             return self.modify(root.right,target,new_val)
         #因為修改後，可能不符合binary_search_tree，所以從新建立binary_search_tree
-        return insert(root,val)
+        return self.insert(root,new_val)
 
 """
-參考資料：
-https://www.geeksforgeeks.org/binary-search-tree-set-1-search-and-insertion/      
+參考資料： https://www.geeksforgeeks.org/binary-search-tree-set-1-search-and-insertion/
 https://www.geeksforgeeks.org/binary-search-tree-set-2-delete/
-http://alrightchiu.github.io/SecondRound/binary-search-tree-searchsou-xun-zi-liao-insertxin-zeng-zi-liao.html
-http://alrightchiu.github.io/SecondRound/binary-search-tree-sortpai-xu-deleteshan-chu-zi-liao.html
-https://www.youtube.com/watch?v=qYo8BVxtoH4
-https://www.youtube.com/watch?v=puyl7MBqPIg
-https://guide.freecodecamp.org/algorithms/binary-search-trees/
-https://www.techiedelight.com/deletion-from-bst/
 """
