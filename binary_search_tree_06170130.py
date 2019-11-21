@@ -42,8 +42,7 @@ class Solution(object):
             else:
                 stopnode.left = newnode
         return root
- 
- >  ![tree](https://github.com/yenchungLin/study/blob/master/picture/BST_insert.jpg)       
+        
 
     #刪除(target:要刪除的值)
     def delete(self, root, target):
