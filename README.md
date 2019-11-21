@@ -60,7 +60,7 @@ Linked_list的運作方式可分為：
 ## WEEK 6
 ### binary_tree
 > tree
->> *   ![tree](https://github.com/yenchungLin/study/blob/master/picture/Tree.jpg)
+>  ![tree](https://github.com/yenchungLin/study/blob/master/picture/Tree.jpg)
 > binary_search_tree
 >> *   [流程圖]()
 ## WEEK 7
