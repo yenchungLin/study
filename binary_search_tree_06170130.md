@@ -1,1 +1,0 @@
- ![tree](https://github.com/yenchungLin/study/blob/master/picture/BST_insert.jpg)
