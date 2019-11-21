@@ -40,23 +40,23 @@ Linked_list的運作方式可分為：
 
 ### [insertion_sort](https://github.com/yenchungLin/study/blob/master/WEEK%203/SetMismatch.py)
 > 在一串數列中，找出缺少的數字與重複的數字。   
->> *   [流程圖](https://github.com/yenchungLin/study/blob/master/picture/insertion_sort.png)
+>  ![流程圖](https://github.com/yenchungLin/study/blob/master/picture/insertion_sort.png)
 
 ### [quick_sort](https://nbviewer.jupyter.org/github/yenchungLin/study/blob/master/homework助教請開/HW1/HW1_quick_sort.ipynb)
 > 在一串數列中找一個基準值，然後將數列中的數值與基準值進行比大小，將小於基準值歸類在基準值到左邊，大於基準值歸類在基準值到右邊，就能夠找出基準值在數列中的哪個位置。然後將心分好的這兩群中，在各別選新的基準值，重複上輪的比較。    
->> *   [流程圖](https://github.com/yenchungLin/study/blob/master/homework助教請開/HW1/quick_sort.png)      
->> *   [流程圖2](https://github.com/yenchungLin/study/blob/master/homework助教請開/HW1/quick_sort2.png)     
->> *   [心得](https://github.com/yenchungLin/study/blob/master/homework助教請開/HW1/quick_sort心得.txt)
+>  ![流程圖](https://github.com/yenchungLin/study/blob/master/homework助教請開/HW1/quick_sort.png)      
+>  ![流程圖2](https://github.com/yenchungLin/study/blob/master/homework助教請開/HW1/quick_sort2.png)     
+>  ![心得](https://github.com/yenchungLin/study/blob/master/homework助教請開/HW1/quick_sort心得.txt)
 ## [WEEK 4](https://github.com/yenchungLin/study/tree/master/WEEK%204)
 ### [heap_sort](https://github.com/yenchungLin/study/blob/master/homework助教請開/HW2/HW2_heap_sort.py.html)
 > [heap](https://github.com/yenchungLin/study/blob/master/WEEK4/heap.py)可分為min heap與max heap。heap_sort則是利用母節點與子結點進行大小比較排序。      
 >> *   min heap:頂端的樹根最小，且母節點的直橫小於等於子結點。    
 >> *   max heap:頂端的樹根最大，且母節點的直橫大於等於子結點。     
->> *   [流程圖](https://github.com/yenchungLin/study/blob/master/picture/heap_sort/heap_sort.png)
+>  ![流程圖](https://github.com/yenchungLin/study/blob/master/picture/heap_sort/heap_sort.png)
 ## WEEK 5
 ### merge_sort
 > merge_sort先將資料進行分組，倆倆比大小後，再丟入較大的組進行大小比較。
->> *   [流程圖](https://github.com/yenchungLin/study/blob/master/picture/merge_sort.png)
+>  ![流程圖](https://github.com/yenchungLin/study/blob/master/picture/merge_sort.png)
 ## WEEK 6
 ### binary_tree
 > tree關係圖
@@ -67,10 +67,9 @@ Linked_list的運作方式可分為：
 ### red_black_tree
 > red_black_tree因為當binary_search_tree弱化會變成linked_list，red_black_tree要平衡。insert、著色、旋轉（左、右）、delete、search、modify   
 > 特色：
->> 1.節點為紅色或是黑色，著色動作
->> 2.root“必為”黑色
->> 3.父節點是red，子節點為black
->> 4.父節點是black，子節點為black或red
->> 5.None為black
->> 6.從頭到尾，每條路徑的black數量要相同
+>> 1.節點為紅色或是黑色，著色動作    
+>> 2.root“必為”黑色   
+>> 3.父節點是red，子節點為black     
+>> 4.父節點是black，子節點為black或red    
+>> 5.None為black6.從頭到尾，每條路徑的black數量要相同
 > 平衡：上一層要長滿，才能長下一層
