@@ -59,10 +59,10 @@ Linked_list的運作方式可分為：
 >> *   [流程圖](https://github.com/yenchungLin/study/blob/master/picture/merge_sort.png)
 ## WEEK 6
 ### binary_tree
-> tree
+> tree關係圖
 >  ![tree](https://github.com/yenchungLin/study/blob/master/picture/Tree.jpg)
 > binary_search_tree
->> *   [流程圖]()
+>  ![tree](https://github.com/yenchungLin/study/blob/master/picture/BST_insert.jpg)
 ## WEEK 7
 ### red_black_tree
 > red_black_tree因為當binary_search_tree弱化會變成linked_list，red_black_tree要平衡。insert、著色、旋轉（左、右）、delete、search、modify   
