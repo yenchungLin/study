@@ -104,4 +104,8 @@ class Solution(object):
 參考資料：
 https://www.geeksforgeeks.org/binary-search-tree-set-1-search-and-insertion/      
 https://www.geeksforgeeks.org/binary-search-tree-set-2-delete/
+http://alrightchiu.github.io/SecondRound/binary-search-tree-searchsou-xun-zi-liao-insertxin-zeng-zi-liao.html
+http://alrightchiu.github.io/SecondRound/binary-search-tree-sortpai-xu-deleteshan-chu-zi-liao.html
+https://www.youtube.com/watch?v=qYo8BVxtoH4
+https://guide.freecodecamp.org/algorithms/binary-search-trees/
 """
