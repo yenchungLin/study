@@ -56,15 +56,31 @@ class Solution(object):
             #刪除為葉子
             delete_node = root
             if delete_node.left == None and delete_node.right == None:
-                delete_node.val == None
+                delete_node == None
+                return root
             #刪除為一棵子樹
-            elif delete_node.left != None and delete_node.right == None:
-                root = root.left
-            elif delete_node.left == None and delete_node.right != None:
-                root = root.right
-            #刪除為兩棵子樹
-            elif delete_node.left != None and delete_node.right != None:
-                root = root.left
+            else:
+                #若左節點有值，將左節點代替其父節點
+                if delete_node.left != None :
+                    temp = delete_node
+                    delete_node = delete_node.left
+                    del temp
+                    return root
+                #若右節點有值，將右節點代替其父節點
+                elif delete_node.right != None:
+                    temp = delete_node
+                    delete_node = delete_node.right
+                    del temp
+                    return root
+                #刪除為兩棵子樹，由右邊子樹去尋找一個左節點，而此節點是沒有子節點
+                temp = root.right
+                min_val = temp.val
+                while temp.left != None:
+                    temp = temp.left
+                    min_val = temp.val
+                root.val = min_val
+                temp = None
+                return root
             return self.delete(root,target)
 
     #搜尋(target:要搜尋的值)
@@ -103,4 +119,10 @@ class Solution(object):
 """
 參考資料： https://www.geeksforgeeks.org/binary-search-tree-set-1-search-and-insertion/
 https://www.geeksforgeeks.org/binary-search-tree-set-2-delete/
+http://alrightchiu.github.io/SecondRound/binary-search-tree-searchsou-xun-zi-liao-insertxin-zeng-zi-liao.html
+http://alrightchiu.github.io/SecondRound/binary-search-tree-sortpai-xu-deleteshan-chu-zi-liao.html
+https://www.youtube.com/watch?v=qYo8BVxtoH4
+https://www.youtube.com/watch?v=gcULXE7ViZw
+https://www.youtube.com/watch?v=puyl7MBqPIg&feature=emb_logo
+https://www.techiedelight.com/deletion-from-bst/
 """
