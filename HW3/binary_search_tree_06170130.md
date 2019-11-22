@@ -31,5 +31,5 @@
  ![BTS_search](https://github.com/yenchungLin/study/blob/master/picture/BST_search.jpg)     
  > * 修改節點：             
  >> 修改節點的時候，因為修改的節點可能不只一個，所以當改完一個後，要重新回去看說還有沒有要修改的節點。然後再修改的時候，可能會因為修改節點不符合binary_search_tree的形式，所以可能要衝新建樹。   
- >> 但是，因為是新樹的層數需要小於等於原樹的階層，則選基準值也很重要      
+ >> 但是，因為是新樹的層數需要小於等於原樹的階層，則選基準值也很重要。因為如果基準值選不好的話，可能會造成binary_search_tree退化成linked_list。      
  ![BTS_修改](https://github.com/yenchungLin/study/blob/master/picture/BST_修改.jpg)    
