@@ -55,34 +55,30 @@ class Solution(object):
         elif root.val > target:
             root.left = self.delete(root.left,target)
         else:
-            #刪除為葉子
-            delete_node = root
-            if delete_node.left == None and delete_node.right == None:
-                delete_node == None
-                return delete_node
-            #刪除為一棵子樹
-            else:
-                #若左節點有值，將左節點代替其父節點
-                if delete_node.left != None :
-                    temp = delete_node
-                    delete_node = delete_node.left
-                    del temp
-                #若右節點有值，將右節點代替其父節點
-                elif delete_node.right != None:
-                    temp = delete_node
-                    delete_node = delete_node.right
-                    del temp
-                return self.delete(delete_node,target)
-                #刪除為兩棵子樹，由右邊子樹去尋找一個左節點，而此節點是沒有子節點
+            #刪除為葉子、為一棵子樹
+            #若左邊為空值，則將右邊的直指到要刪除得節點位置
+            if root.left == None:
                 temp = root.right
-                min_val = temp.val
-                while temp.left != None:
-                    temp = temp.left
-                    min_val = temp.val
-                root.val = min_val
-                temp = None
-                return True
-            return True
+                root = None
+                return temp
+            #若右邊為空值，則將左邊的直指到要刪除得節點位置
+            elif root.right == None:
+                temp = root.left
+                root = None
+                return temp
+            #刪除為兩顆棵子樹
+            elif root.left != None and root.right != None:
+                #往左邊子樹找最右邊的節點
+                root = root.left
+                nownode = root
+                while nownode != None:
+                    stopnode = nownode
+                    nownode = nownode.right
+                if stopnode != None:
+                    root.val = stopnode.val
+                    return root
+
+            
 
     #搜尋(target:要搜尋的值)
     def search(self,root,target):
