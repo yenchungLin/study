@@ -134,6 +134,7 @@ node5.left = node6
 node4.right = node7
 print(Solution().insert(root,4)== root.left.right)
 """
+
 """
 參考資料： https://www.geeksforgeeks.org/binary-search-tree-set-1-search-and-insertion/
 https://www.geeksforgeeks.org/binary-search-tree-set-2-delete/
