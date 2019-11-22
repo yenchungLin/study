@@ -114,7 +114,7 @@ class Solution(object):
         #因為修改後，可能不符合binary_search_tree，所以從新建立binary_search_tree
         
         return True
-
+"""
 import copy
 from binary_search_tree_06170130 import Solution
 from binary_search_tree_06170130 import TreeNode
@@ -157,7 +157,7 @@ print("modify")
 root4 = Solution().modify(root4,7,4)
 #print(isBinarySearchTree(root4))
 print("--------------------------------------------------")
-
+"""
 """
 參考資料： https://www.geeksforgeeks.org/binary-search-tree-set-1-search-and-insertion/
 https://www.geeksforgeeks.org/binary-search-tree-set-2-delete/
