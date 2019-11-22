@@ -65,8 +65,7 @@ class Solution(object):
             elif root.right == None:
                 temp = root.left
                 root = None
-                root = temp
-                return root
+                return temp
             #刪除為兩顆棵子樹
             elif root.left != None and root.right != None:
                 #往左邊子樹找最右邊的節點
