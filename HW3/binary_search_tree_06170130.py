@@ -18,7 +18,7 @@ class Solution(object):
         #root不存在，則newnode會變成root
         if root == None:
             root = newnode
-            return root
+            return True
         
         #root存在
         else:
@@ -41,13 +41,13 @@ class Solution(object):
             #如果newnode的val <= stopnode.data，則將newnode增加在stopnode.left
             else:
                 stopnode.left = newnode
-        return root
+        return True
         
 
     #刪除(target:要刪除的值)
     def delete(self, root, target):
         if root == None:
-            return root
+            return False
         if root.val < target:
             return self.delete(root.left,target)
         elif root > target:
@@ -57,7 +57,7 @@ class Solution(object):
             delete_node = root
             if delete_node.left == None and delete_node.right == None:
                 delete_node == None
-                return root
+                return True
             #刪除為一棵子樹
             else:
                 #若左節點有值，將左節點代替其父節點
@@ -65,13 +65,13 @@ class Solution(object):
                     temp = delete_node
                     delete_node = delete_node.left
                     del temp
-                    return root
+                    return True
                 #若右節點有值，將右節點代替其父節點
                 elif delete_node.right != None:
                     temp = delete_node
                     delete_node = delete_node.right
                     del temp
-                    return root
+                    return True
                 #刪除為兩棵子樹，由右邊子樹去尋找一個左節點，而此節點是沒有子節點
                 temp = root.right
                 min_val = temp.val
@@ -80,29 +80,29 @@ class Solution(object):
                     min_val = temp.val
                 root.val = min_val
                 temp = None
-                return root
+                return True
             return self.delete(root,target)
 
-    #搜尋(target:要搜尋的值)
+    #搜尋(target:要搜尋的值) 
     def search(self, root, target):
         #tree不存在，回傳false
         if root == None:
-            return root
+            return False
         #節點的值與要搜尋的值相同，回傳true
         if root.val == target:
-            return root
+            return True
         #節點的值小於要搜尋的值，則需要移到左邊節點，再進行一次搜尋
         elif root.val < target:
             return self.search(root.left,target)
         #節點的值大於要搜尋的值，則需要移到右邊節點，再進行一次搜尋
         else:
             return self.search(root.right,target)
-        return root
+        return True
 
     #修改(tartget:要搜尋的值，new_val:要修改的值)
     def modify(self, root, target, new_val):
         if root == None:
-            return root
+            return False
         #如果找到target，則將root.val變成new_val，並再搜尋看看有沒有要改的值
         if root.val == target:
             root.val = new_val
@@ -116,6 +116,24 @@ class Solution(object):
         #因為修改後，可能不符合binary_search_tree，所以從新建立binary_search_tree
         return self.insert(root,new_val)
 
+"""
+root = TreeNode(5)
+node1 = TreeNode(3)
+node2 = TreeNode(3)
+node3 = TreeNode(-5)
+node4 = TreeNode(8)
+node5 = TreeNode(7)
+node6 = TreeNode(6)
+node7 = TreeNode(10)
+root.left = node1
+root.right = node4
+node1.left = node2
+node2.left = node3
+node4.left = node5
+node5.left = node6
+node4.right = node7
+print(Solution().insert(root,4)== root.left.right)
+"""
 """
 參考資料： https://www.geeksforgeeks.org/binary-search-tree-set-1-search-and-insertion/
 https://www.geeksforgeeks.org/binary-search-tree-set-2-delete/
