@@ -23,7 +23,8 @@
  >> 刪除節點的時候，有想到三中方法：刪除為葉子、刪除為一顆子樹、刪除為兩顆子樹。    
  >> 刪除為葉子時較簡單，直接將葉子的節點指向空值。   
  >> 刪除一顆子樹時與兩顆子樹時，要考慮哪個點來補刪除的節點。那我之前想得太簡單了，我只有考慮到說刪除的父節點只有一個或是兩個節點，沒有考慮到說子節點是否還有子節點的問題。     
- >> 而且要搜尋哪個節點當刪除節點的值也沒有想到。
+ >> 而且要搜尋哪個節點當刪除節點的值也沒有想到。     
+ >> 目前遇到回傳值的問題，
  ![BTS_delete](https://github.com/yenchungLin/study/blob/master/picture/BTS_delete.jpg)      
  > * 搜尋節點：        
  >> search說的是我要搜尋的值，是否在樹上有出現。   
@@ -31,5 +32,6 @@
  ![BTS_search](https://github.com/yenchungLin/study/blob/master/picture/BST_search.jpg)     
  > * 修改節點：             
  >> 修改節點的時候，因為修改的節點可能不只一個，所以當改完一個後，要重新回去看說還有沒有要修改的節點。然後再修改的時候，可能會因為修改節點不符合binary_search_tree的形式，所以可能要衝新建樹。   
- >> 但是，因為是新樹的層數需要小於等於原樹的階層，則選基準值也很重要。因為如果基準值選不好的話，可能會造成binary_search_tree退化成linked_list。      
+ >> 但是，因為是新樹的層數需要小於等於原樹的階層，則選基準值也很重要。因為如果基準值選不好的話，可能會造成binary_search_tree退化成linked_list  
+ >>       
  ![BTS_修改](https://github.com/yenchungLin/study/blob/master/picture/BST_修改.jpg)    
