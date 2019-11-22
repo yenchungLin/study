@@ -38,26 +38,28 @@ class Solution(object):
             #如果newnode的val > stopnode.data，則將newnode增加在stopnode.right
             if val > stopnode.val:
                 stopnode.right = newnode
+                return stopnode.right
             #如果newnode的val <= stopnode.data，則將newnode增加在stopnode.left
             else:
                 stopnode.left = newnode
-        return root.val
+                return stopnode.left
+        return 
         
 
     #刪除(target:要刪除的值)
     def delete(self, root, target):
         if root == None:
-            return True
+            return root
         if root.val < target:
-            return self.delete(root.left,target)
+            root.right = self.delete(root.right,target)
         elif root.val > target:
-            return self.delete(root.right,target)
+            root.left = self.delete(root.left,target)
         else:
             #刪除為葉子
             delete_node = root
             if delete_node.left == None and delete_node.right == None:
                 delete_node == None
-                return True
+                return delete_node
             #刪除為一棵子樹
             else:
                 #若左節點有值，將左節點代替其父節點
@@ -65,13 +67,12 @@ class Solution(object):
                     temp = delete_node
                     delete_node = delete_node.left
                     del temp
-                    return True
                 #若右節點有值，將右節點代替其父節點
                 elif delete_node.right != None:
                     temp = delete_node
                     delete_node = delete_node.right
                     del temp
-                    return True
+                return self.delete(delete_node,target)
                 #刪除為兩棵子樹，由右邊子樹去尋找一個左節點，而此節點是沒有子節點
                 temp = root.right
                 min_val = temp.val
@@ -106,10 +107,10 @@ class Solution(object):
         if root.val == target:
             root.val = new_val
             return self.modify(root,target,new_val)
-        #如果root.val < target，則需要移到左邊節點，再進行一次搜尋
+        #如果root.val < target，則需要移到右邊節點，再進行一次搜尋
         elif root.val < target:
             return self.modify(root.right,target,new_val)
-        #如果root.val > target，則需要移到右邊節點，再進行一次搜尋
+        #如果root.val > target，則需要移到左邊節點，再進行一次搜尋
         else:
             return self.modify(root.left,target,new_val)
         #因為修改後，可能不符合binary_search_tree，所以從新建立binary_search_tree
@@ -144,11 +145,11 @@ print("insert")
 print(Solution().insert(root1,4) ==root1.left.right)
 print("------------------")
 print("delete")
-#root2=Solution().delete(root2,3)
-#print(root2.val==5 and root2.left.val==-5 and root2.left.left==None and root2.left.right==None)
-#print(root2.right.right.val==10 and root2.right.left.val==7 and root2.right.left.left.val== 6)
-#print(root2.right.right.right==None and root2.right.right.left== None and root2.right.left.right==None )
-#print(root2.right.left.left.left==None  and root2.right.left.left.right==None and root2.right.val== 8)
+root2=Solution().delete(root2,10)
+print(root2.val==5 and root2.left.val==-5 and root2.left.left==None and root2.left.right==None)
+print(root2.right.right.val==10 and root2.right.left.val==7 and root2.right.left.left.val== 6)
+print(root2.right.right.right==None and root2.right.right.left== None and root2.right.left.right==None )
+print(root2.right.left.left.left==None  and root2.right.left.left.right==None and root2.right.val== 8)
 print("------------------")
 print("search")
 print(Solution().search(root3,10) ==root3.right.right)
