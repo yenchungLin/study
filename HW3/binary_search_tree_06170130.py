@@ -153,7 +153,7 @@ print(Solution().search(root3,10) ==root3.right.right)
 print("------------------")
 print("modify")    
 root4 = Solution().modify(root4,7,4)
-#print(isBinarySearchTree(root4))
+print(isBinarySearchTree(root4))
 print("--------------------------------------------------")
 
 """
