@@ -7,7 +7,7 @@
 > *   [WEEK5](https://github.com/yenchungLin/study#week-5) : merge_sort
 > *   [WEEK6](https://github.com/yenchungLin/study#week-6) ：binary_tree、binary_search_tree
 > *   [WEEK7](https://github.com/yenchungLin/study#week-7) ：red_black_tree
-
+> *   [WEEK8](https://github.com/yenchungLin/study#week-8) ：hash table
 
 ## [WEEK 1](https://github.com/yenchungLin/study/tree/master/WEEK%201)
 ### [linked_list](https://github.com/yenchungLin/study/blob/master/WEEK%201/linked_list.py)
@@ -73,3 +73,6 @@ Linked_list的運作方式可分為：
 >> 4.父節點是black，子節點為black或red    
 >> 5.None為black6.從頭到尾，每條路徑的black數量要相同
 > 平衡：上一層要長滿，才能長下一層
+## WEEK 8
+### hash   
+> hash
