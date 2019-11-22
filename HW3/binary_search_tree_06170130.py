@@ -98,6 +98,7 @@ class Solution(object):
         return True
     #修改(tartget:要搜尋的值，new_val:要修改的值)
     def modify(self, root, target, new_val):
+        
         if root == None:
             return True
         #如果找到target，則將root.val變成new_val，並再搜尋看看有沒有要改的值
@@ -111,6 +112,7 @@ class Solution(object):
         else:
             return self.modify(root.left,target,new_val)
         #因為修改後，可能不符合binary_search_tree，所以從新建立binary_search_tree
+        
         return True
 
 import copy
@@ -153,7 +155,7 @@ print(Solution().search(root3,10) ==root3.right.right)
 print("------------------")
 print("modify")    
 root4 = Solution().modify(root4,7,4)
-print(isBinarySearchTree(root4))
+#print(isBinarySearchTree(root4))
 print("--------------------------------------------------")
 
 """
