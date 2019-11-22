@@ -6,7 +6,6 @@ class TreeNode(object):
         self.right = None
 
 class Solution(object):
-    
     #增加
     def insert(self, root, val):
         newnode = TreeNode(val)
