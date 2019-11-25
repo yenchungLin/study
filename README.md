@@ -76,3 +76,4 @@ Linked_list的運作方式可分為：
 ## WEEK 8
 ### hash   
 > hash
+>  ![python進位轉換](https://github.com/yenchungLin/study/blob/master/picture/Tree.jpg)
