@@ -77,3 +77,14 @@ Linked_list的運作方式可分為：
 ### hash   
 > hash
 >  ![python進位轉換](https://github.com/yenchungLin/study/blob/master/picture/python進位轉換.jpg)
+## WEEK 9
+### BFS 
+> graph
+>> graph的圖形連接類似hash_table
+>  ![graph](https://github.com/yenchungLin/study/blob/master/picture/graph.jpg)
+> BFS執行步驟
+>> 1.先找起始值令為level 0
+>> 2.將level 0 附近點令為level 1
+>> 3.將level 1 附近的點令為level 2
+>> 重複上市步驟直到點全被被走訪完
+>  ![BFS](https://github.com/yenchungLin/study/blob/master/picture/BFS.jpg)
