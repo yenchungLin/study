@@ -170,25 +170,9 @@ class MyHashSet:
 
 
 """
-h = MD5.new()
-#字串要說明型態（編碼）
-#h.update("haha".encode("utf-8"))
-#print (h.hexdigest())
-#x = int(h.hexdigest(),16)
-
-hashSet = MyHashSet()
-hashSet.add("dog")
-hashSet.add("pig")
-rel = hashSet.contains("pig")
+hashSet.add("he")
+rel = hashSet.contains("he")
 print(rel)
-rel = hashSet.contains("dog")
-print(rel)
-rel = hashSet.contains("cat")
-print(rel)
-hashSet.add("bird")
-rel = hashSet.contains("bird")
-print(rel)
-#另外加的
 hashSet.add("i")
 rel = hashSet.contains("i")
 print(rel)
