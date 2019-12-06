@@ -1,3 +1,5 @@
+from Crypto.Hash import MD5
+
 class ListNode:
     def __init__(self, val):
         self.val = val
@@ -165,9 +167,9 @@ class MyHashSet:
 
 
 
-"""
-from Crypto.Hash import MD5
 
+
+"""
 h = MD5.new()
 #字串要說明型態（編碼）
 #h.update("haha".encode("utf-8"))
