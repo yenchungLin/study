@@ -1,5 +1,7 @@
 # _**資料結構與演算法**_
-## 目錄：
+## 目錄：    
+1.漸少記憶體   
+2.加快運算時間  
 > *   [WEEK1](https://github.com/yenchungLin/study#week-1)：linked_list
 > *   [WEEK2](https://github.com/yenchungLin/study#week-2)：stack、queue
 > *   [WEEK3](https://github.com/yenchungLin/study#week-3)：insertion_sort、quick_sort(HW1)
@@ -8,7 +10,8 @@
 > *   [WEEK6](https://github.com/yenchungLin/study#week-6) ：binary_tree、binary_search_tree
 > *   [WEEK7](https://github.com/yenchungLin/study#week-7) ：red_black_tree
 > *   [WEEK8](https://github.com/yenchungLin/study#week-8) ：hash table
-> *   [WEEKㄞ](https://github.com/yenchungLin/study#week-9) ：graph、BFS
+> *   [WEEK9](https://github.com/yenchungLin/study#week-9) ：graph、BFS
+> *   [WEEK10](https://github.com/yenchungLin/study#week-10) ：DFS
 
 ## [WEEK 1](https://github.com/yenchungLin/study/tree/master/WEEK%201)
 ### [linked_list](https://github.com/yenchungLin/study/blob/master/WEEK%201/linked_list.py)
@@ -84,8 +87,16 @@ Linked_list的運作方式可分為：
 >> graph的圖形連接類似hash_table
 >  ![graph](https://github.com/yenchungLin/study/blob/master/picture/graph.jpg)
 > BFS執行步驟
+>> 利用queue
 >> 1.先找起始值令為level 0
 >> 2.將level 0 附近點令為level 1
 >> 3.將level 1 附近的點令為level 2
 >> 重複上市步驟直到點全被被走訪完
 >  ![BFS](https://github.com/yenchungLin/study/blob/master/picture/BFS.jpg)
+## WEEK 10
+### DFS 
+> 例如：運送問題    
+> 先遇到先走訪   
+> 以附近的節點昨為新的起始點   
+> 若有箭頭指向時，表示儲存附近的節點為單向，而不是雙向   
+>> 利用stack
