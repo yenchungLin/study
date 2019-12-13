@@ -11,7 +11,8 @@
 > *   [WEEK7](https://github.com/yenchungLin/study#week-7) ：red_black_tree
 > *   [WEEK8](https://github.com/yenchungLin/study#week-8) ：hash table
 > *   [WEEK9](https://github.com/yenchungLin/study#week-9) ：graph、BFS
-> *   [WEEK10](https://github.com/yenchungLin/study#week-10) ：DFS
+> *   [WEEK10](https://github.com/yenchungLin/study#week-10) ：DFS   
+> *   [WEEK11](https://github.com/yenchungLin/study#week-11) ：Minimum Spanning Tree 
 
 ## [WEEK 1](https://github.com/yenchungLin/study/tree/master/WEEK%201)
 ### [linked_list](https://github.com/yenchungLin/study/blob/master/WEEK%201/linked_list.py)
@@ -100,3 +101,13 @@ Linked_list的運作方式可分為：
 > 以附近的節點昨為新的起始點   
 > 若有箭頭指向時，表示儲存附近的節點為單向，而不是雙向   
 >> 利用stack
+## WEEK 11
+### Minimum Spanning Tree 
+> 樹不能有迴路   
+> 在圖裡找出一顆子樹     
+> 有weight       
+> 由邊的角度去思考，而不是用腳的角度去思考      
+> 應用：造路（主幹道、支線）    
+> 只關心起點到終點的weight     
+> weight要先去sorting    
+> 任兩點逞生一個邊，所以E＝V-1
