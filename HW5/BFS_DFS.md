@@ -19,7 +19,7 @@
 7.E進入走訪list，BF進入暫存list。但是BF都走訪過了，不需要存放到暫存list中    
 8.G進入走訪list，E進入暫存list。但是E已經走訪過了，所以不需要再放入暫存點          
 9.走訪順序為ADFBCGE     
-[DFS](https://github.com/yenchungLin/study/blob/master/picture/DFS.jpg)
+![DFS](https://github.com/yenchungLin/study/blob/master/picture/DFS.jpg)
 ## 程式碼學習歷程    
 #  python defaultdict    
 defaultdictr接受一個factory_function(例如：list、set、str)，弱勢key不存在時，factory_function會回傳默認值([]、set()、0)。   
