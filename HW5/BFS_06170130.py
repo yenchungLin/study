@@ -14,7 +14,6 @@ class Graph:
         self.val = None
         self.next = None
         self.head = None
-        self.tail = None
         
     # 建立關係圖，u為節點，v為u附近的節點
     def addEdge(self,u,v): 
