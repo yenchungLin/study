@@ -111,15 +111,16 @@ class Graph():
                 n = minpoint.index(min(minpoint))
                 return self.Dijkstra(n)
         return self.adddict(self.SP)
-
 """
-    def addEdge(self,u,v,w): 
-        self.u.append(u)
-        self.v.append(v)
-        self.w.append(w)
-        self.data = pd.DataFrame({'u':self.u,'v':self.v,'w':self.w})
-        self.data = self.data.sort_values('w')
+    def weight(self,arr):
+        return arr[2]
 
+    def addEdge(self,u,v,w): 
+        self.graph.append([u,v,w])
+        if len(self.graph) >=2:
+            self.graph = self.graph.sort(key = self.weight, reverse = True)
+        return
+        
     def k_adddict(self,u,v,w):
         path = []
         point = "%d-%d"%(u,v)
@@ -129,26 +130,12 @@ class Graph():
 
     #MST
     def Kruskal(self):
-        while self.data != None:
-            i = 0
-            u = self.data.head(i)['u']
-            v = self.data.head(i)['v']
-            if self.parent[u] == -1 and self.parent[v] == -1:
-                self.parent[u] = u
-                self.parent[v] = v
-                return self.k_adddict(self.data.head(i)[u],self.data.head(i)[v],self.data.head(i)[w])
+        #for i in range(0,len(self.graph)-1):
 
-            elif self.parent[u] != -1 and self.parent[v] == -1:
-                if self.parent[u] != self.parent[v]:
-                    self.parent[v] = self.parent[u]
-                else:
-                    break
-            
         return
 
 
        
-
 
 執行程式碼
 
@@ -166,8 +153,8 @@ g.addEdge(2,3,4)
 
 print("Kruskal",g.Kruskal())
 
-"""
-"""
+
+
 參考資料
 https://www.geeksforgeeks.org/python-convert-a-list-to-dictionary/     
 https://pythonnote.wordpress.com/2014/04/03/python技巧漂亮又通順的程式碼/      
