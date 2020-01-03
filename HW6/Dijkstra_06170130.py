@@ -1,5 +1,8 @@
 from collections import defaultdict 
+"""
 import numpy as np
+import pandas as pd
+"""
 
 #Class to represent a graph 
 class Graph(): 
@@ -13,10 +16,15 @@ class Graph():
         self.visit = [False] * vertices 
         #最短路徑
         self.SP = []
+        """
         self.parent = [-1] * vertices
-        self.data = defaultdict(list) 
         self.MST = {}
-        self.head = None
+        self.data = 0
+        self.u = []
+        self.v = []
+        self.w = []
+        """
+
 
     def adddict(self,a):
         index = []
@@ -103,24 +111,42 @@ class Graph():
                 n = minpoint.index(min(minpoint))
                 return self.Dijkstra(n)
         return self.adddict(self.SP)
+
 """
     def addEdge(self,u,v,w): 
-        self.data[u].append(v)
-        self.data[v].append(u)
+        self.u.append(u)
+        self.v.append(v)
+        self.w.append(w)
+        self.data = pd.DataFrame({'u':self.u,'v':self.v,'w':self.w})
+        self.data = self.data.sort_values('w')
+
+    def k_adddict(self,u,v,w):
         path = []
         point = "%d-%d"%(u,v)
         path.append(point)
         self.MST[point] = w
+        return
 
     #MST
     def Kruskal(self):
-        self.MST = sorted(self.MST.items(),key = lambda x:x[1])
-        return self.MST
+        while self.data != None:
+            i = 0
+            u = self.data.head(i)['u']
+            v = self.data.head(i)['v']
+            if self.parent[u] == -1 and self.parent[v] == -1:
+                self.parent[u] = u
+                self.parent[v] = v
+                return self.k_adddict(self.data.head(i)[u],self.data.head(i)[v],self.data.head(i)[w])
 
-class ListNode:
-    def __init__(self,index):
-        self.index = index
-        self.next = None
+            elif self.parent[u] != -1 and self.parent[v] == -1:
+                if self.parent[u] != self.parent[v]:
+                    self.parent[v] = self.parent[u]
+                else:
+                    break
+            
+        return
+
+
        
 
 
@@ -139,6 +165,7 @@ g.addEdge(1,3,15)
 g.addEdge(2,3,4)
 
 print("Kruskal",g.Kruskal())
+
 """
 """
 參考資料
