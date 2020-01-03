@@ -78,6 +78,7 @@ Kruskal是依照weight由小到大排列，並且不能形成一個環圈的概�
 7.(1,3)=15，因為2是1的parent，2也是3的parent，若將他們連接起來，會形成circle，所以這條路徑不通。     
 8.得到MTS=4+5+10=19   
 ## 程式碼學習歷程           
+還在努力中
 ## 參考資料：     
 https://www.geeksforgeeks.org/python-convert-a-list-to-dictionary/     
 https://pythonnote.wordpress.com/2014/04/03/python技巧漂亮又通順的程式碼/      
