@@ -14,8 +14,9 @@ class Graph():
         #最短路徑
         self.SP = []
         self.parent = [-1] * vertices
-        self.data = [None] *vertices
+        self.data = defaultdict(list) 
         self.MST = {}
+        self.head = None
 
     def adddict(self,a):
         index = []
@@ -102,10 +103,12 @@ class Graph():
                 n = minpoint.index(min(minpoint))
                 return self.Dijkstra(n)
         return self.adddict(self.SP)
-
+"""
     def addEdge(self,u,v,w): 
+        self.data[u].append(v)
+        self.data[v].append(u)
         path = []
-        point = "%s-%s"%(u,v)
+        point = "%d-%d"%(u,v)
         path.append(point)
         self.MST[point] = w
 
@@ -113,11 +116,16 @@ class Graph():
     def Kruskal(self):
         self.MST = sorted(self.MST.items(),key = lambda x:x[1])
         return self.MST
+
+class ListNode:
+    def __init__(self,index):
+        self.index = index
+        self.next = None
        
 
-"""
+
 執行程式碼
-"""
+
 g = Graph(10)
 g.graph = [[0,4,0,0,0,0,0,8,0,0],[4,0,8,0,0,0,0,11,0,0],[0,8,0,7,0,4,0,0,2,0],[0,0,7,0,9,14,0,0,0,0],[0,0,0,9,0,10,0,0,0,0],[0,0,4,14,10,0,2,0,0,0],[0,0,0,0,0,2,0,1,6,0],[8,11,0,0,0,0,1,0,7,0],[0,0,2,0,0,0,6,7,0,3],[0,0,0,0,0,0,0,0,3,0]]
 print("Dijkstar",g.Dijkstra(0))
@@ -131,7 +139,7 @@ g.addEdge(1,3,15)
 g.addEdge(2,3,4)
 
 print("Kruskal",g.Kruskal())
-
+"""
 """
 參考資料
 https://www.geeksforgeeks.org/python-convert-a-list-to-dictionary/     
