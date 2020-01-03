@@ -136,7 +136,7 @@ DFS流程
 9.走訪順序為ADFBCGE     
 ![DFS](https://github.com/yenchungLin/study/blob/master/picture/DFS.jpg)    
 [DFS程式碼]() 
-# [WEEK 14]((ttps://github.com/yenchungLin/study/tree/master/WEEK%214)
+# [WEEK 14](https://github.com/yenchungLin/study/tree/master/WEEK%214)
 ## Minimum Spanning Tree 
 > 樹不能有迴路   
 > 在圖裡找出一顆子樹     
@@ -146,6 +146,6 @@ DFS流程
 > 只關心起點到終點的weight     
 > weight要先去sorting    
 > 任兩點逞生一個邊，所以E＝V-1     
-## [WEEK 15](https://github.com/yenchungLin/study/tree/master/WEEK%215)
+# [WEEK 15](https://github.com/yenchungLin/study/tree/master/WEEK%215)
 shortest_path    
 [shortest_path程式碼]() 
