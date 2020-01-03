@@ -166,10 +166,7 @@ class MyHashSet:
 """
 
 
-
-
-
-"""
+hashSet = MyHashSet()
 hashSet.add("he")
 rel = hashSet.contains("he")
 print(rel)
@@ -199,7 +196,7 @@ print(rel)
 hashSet.remove("he")
 rel = hashSet.contains("he")
 print(rel)
-"""
+
 """
 參考資料：
 https://www.geeksforgeeks.org/linked-list-set-3-deleting-node/
