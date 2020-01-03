@@ -1,21 +1,28 @@
-# _**資料結構與演算法**_
+# _**資料結構與演算法**_    
+學演算法的目的：      
+*   漸少記憶體    
+*   加快運算時間    
 ## 目錄：    
-1.漸少記憶體   
-2.加快運算時間  
-> *   [WEEK1](https://github.com/yenchungLin/study#week-1)：linked_list
-> *   [WEEK2](https://github.com/yenchungLin/study#week-2)：stack、queue
-> *   [WEEK3](https://github.com/yenchungLin/study#week-3)：insertion_sort、quick_sort(HW1)
-> *   [WEEK4](https://github.com/yenchungLin/study#week-4)：heap_sort
-> *   [WEEK5](https://github.com/yenchungLin/study#week-5) : merge_sort
-> *   [WEEK6](https://github.com/yenchungLin/study#week-6) ：binary_tree、binary_search_tree
-> *   [WEEK7](https://github.com/yenchungLin/study#week-7) ：red_black_tree
-> *   [WEEK8](https://github.com/yenchungLin/study#week-8) ：hash table
-> *   [WEEK9](https://github.com/yenchungLin/study#week-9) ：graph、BFS
-> *   [WEEK10](https://github.com/yenchungLin/study#week-10) ：DFS   
-> *   [WEEK11](https://github.com/yenchungLin/study#week-11) ：Minimum Spanning Tree 
-
-## [WEEK 1](https://github.com/yenchungLin/study/tree/master/WEEK%201)
-### [linked_list](https://github.com/yenchungLin/study/blob/master/WEEK%201/linked_list.py)
+> *   [WEEK1](https://github.com/yenchungLin/study#week-1)：開學暖身週
+> *   [WEEK2](https://github.com/yenchungLin/study#week-2)：linked_list
+> *   [WEEK3](https://github.com/yenchungLin/study#week-3)：stack、queue
+> *   [WEEK4](https://github.com/yenchungLin/study#week-4)：insertion_sort、quick_sort
+> *   [WEEK5](https://github.com/yenchungLin/study#week-5)：放假
+> *   [WEEK6](https://github.com/yenchungLin/study#week-6)：heap_sort
+> *   [WEEK7](https://github.com/yenchungLin/study#week-7)： merge_sort
+> *   [WEEK8](https://github.com/yenchungLin/study#week-8)：binary_tree
+> *   [WEEK9](https://github.com/yenchungLin/study#week-9)：binary_search_tree
+> *   [WEEK10](https://github.com/yenchungLin/study#week-10)：red black tree
+> *   [WEEK11](https://github.com/yenchungLin/study#week-11)：hash table
+> *   [WEEK12](https://github.com/yenchungLin/study#week-12)：BFS     
+> *   [WEEK13](https://github.com/yenchungLin/study#week-13)：DFS  
+> *   [WEEK14](https://github.com/yenchungLin/study#week-14)：shortest_path 
+> *   [WEEK15](https://github.com/yenchungLin/study#week-15)：Minimum_Spanning_Tree(MST)  
+> *   [WEEK16](https://github.com/yenchungLin/study#week-16)：期末考複習週
+> *   [WEEK17](https://github.com/yenchungLin/study#week-17)：期末考週
+> *   [WEEK18](https://github.com/yenchungLin/study#week-18)：期末考週
+## [WEEK 2](https://github.com/yenchungLin/study/tree/master/WEEK%202)
+### [linked_list](https://github.com/yenchungLin/study/blob/master/WEEK%202/linked_list.py)
 
 > 利用電腦中記憶體是不連續的、隨機的方式，已結點連結的方式進行資料儲存。優點是插入即刪除資料方便。缺點是無法像靜態資料隨機讀取資料，需要透過依循的方式找到資料。     
 Linked_list的運作方式可分為：     
@@ -80,27 +87,38 @@ Linked_list的運作方式可分為：
 > 平衡：上一層要長滿，才能長下一層
 ## WEEK 8
 ### hash   
-> hash
->  ![python進位轉換](https://github.com/yenchungLin/study/blob/master/picture/python進位轉換.jpg)
+hash    
+python進位轉換表
+ ![python進位轉換](https://github.com/yenchungLin/study/blob/master/picture/python進位轉換.jpg)
 ## WEEK 9
 ### BFS 
-> graph
->> graph的圖形連接類似hash_table
->  ![graph](https://github.com/yenchungLin/study/blob/master/picture/graph.jpg)
-> BFS執行步驟
->> 利用queue
->> 1.先找起始值令為level 0
->> 2.將level 0 附近點令為level 1
->> 3.將level 1 附近的點令為level 2
->> 重複上市步驟直到點全被被走訪完
->  ![BFS](https://github.com/yenchungLin/study/blob/master/picture/BFS.jpg)
+graph
+> graph的圖形連接類似hash_table
+ ![graph](https://github.com/yenchungLin/study/blob/master/picture/graph.jpg)
+BFS流程圖      
+1.先畫出關係圖，並決定起始點A    
+2.建立兩個list，一個為走訪順序的list，另一個會暫存準備走訪的list。A進入走訪list，BD進入暫存list   
+3.B進入走訪list，CF進入暫存list    
+4.D進入走訪list，F進入暫存list。因為F已經在暫存list中，不需要再存放在暫存list      
+5.C進入走訪list，EG進入暫存list   
+6.F進入走訪list，A進入暫存list。但是A已經被走訪過了，不需要再放入暫存list中   
+7.E進入走訪list，BF進入暫存list。但是BF都走訪過了，不需要存放到暫存list中    
+8.G進入走訪list，E進入暫存list。但是E已經走訪過了，所以不需要再放入暫存點    
+9.走訪順序為ABDCFEG   
+![BFS](https://github.com/yenchungLin/study/blob/master/picture/BFS.jpg) 
 ## WEEK 10
-### DFS 
-> 例如：運送問題    
-> 先遇到先走訪   
-> 以附近的節點昨為新的起始點   
-> 若有箭頭指向時，表示儲存附近的節點為單向，而不是雙向   
->> 利用stack
+### DFS    
+DFS流程
+1.先畫出關係圖，並決定起始點A    
+2.建立兩個list，一個為走訪順序的list，另一個會暫存準備走訪的list。A進入走訪list，BD進入暫存list    
+3.D進入走訪list，F進入暫存list     
+4.F進入走訪list，A進入暫存list。但是A已經走訪過了，不需要再存放在暫存list中      
+5.B進入走訪list，CF進入暫存list。F已經在暫存list中，不需要再存一次      
+6.C進入走訪list，EG進入暫存list     
+7.E進入走訪list，BF進入暫存list。但是BF都走訪過了，不需要存放到暫存list中    
+8.G進入走訪list，E進入暫存list。但是E已經走訪過了，所以不需要再放入暫存點          
+9.走訪順序為ADFBCGE     
+![DFS](https://github.com/yenchungLin/study/blob/master/picture/DFS.jpg)
 ## WEEK 11
 ### Minimum Spanning Tree 
 > 樹不能有迴路   
@@ -110,4 +128,6 @@ Linked_list的運作方式可分為：
 > 應用：造路（主幹道、支線）    
 > 只關心起點到終點的weight     
 > weight要先去sorting    
-> 任兩點逞生一個邊，所以E＝V-1
+> 任兩點逞生一個邊，所以E＝V-1     
+## WEEK 12
+### shortest_path
