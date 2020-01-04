@@ -1,8 +1,14 @@
-在一開始寫得時候，只有想到說要將數值跟基準值比大小後，分別裝到三個箱子中。
-但是那個時候在想，分完第一次後，要進行第二層的分法會出問題，所以，我放棄了分裝的方式。
-後來，我在書中看到一個作法，他先找到一個基準值後，由基準值往後找比基準值大的數叫做i，
-並由基準值往後找比基準值小的數叫做j，然後ij交換。重複這個動作直到ij相鄰，
-將基準值插入ij之間，則基準的位置固定。重新找基準值進行上述步驟（可以參考流程圖2）
-但是，這個有一個問題，就是弱ij交換位置後，中間還有一個數時，這個是要跟機種值比大小，
-會有點麻煩。最後在上課同學分享時，發現其實一開始的想法沒有錯，
-只是沒有考慮到可能只有一個元素，或是空直的情形，還有在自定方程式中呼叫方程式的情況。
+# quick_sort   
+## 原理說明：   
+在一串數列中找一個基準值，然後將數列中的數值與基準值進行比大小，將小於基準值歸類在基準值到左邊，大於基準值歸類在基準值到右邊，就能夠找出基準值在數列中的哪個位置。然後將心分好的這兩群中，在各別選新的基準值，重複上輪的比較。   
+* 平均時間複雜度：O(n log n)   
+* 最佳時間複雜度：O(n log n)   
+* 最差時間複雜度：O(n^2) 
+* 空間複雜度：O(n)   
+* 穩定度：不穩定      
+## 流程圖：   
+![流程圖](https://github.com/yenchungLin/study/blob/master/picture/quick_sort.png)      
+![流程圖2](https://github.com/yenchungLin/study/blob/master/picture/quick_sort2.png)    
+## 參考資料：   
+http://alrightchiu.github.io/SecondRound/comparison-sort-quick-sortkuai-su-pai-xu-fa.html   
+http://notepad.yehyeh.net/Content/Algorithm/Sort/Quick/Quick.php
