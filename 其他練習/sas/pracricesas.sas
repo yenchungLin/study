@@ -1,0 +1,374 @@
+SAS程式碼
+LIBNAME CLASS 'C:\Users\06170130\SAS';
+/*見資料*/
+DATA CLASS.DF;
+ INPUT  X1 Y1;
+ CARDS; (or DATALINES;) 
+ 1 2
+ 3 4
+ 5 6
+ 4 12
+ 0 3
+ ;
+ RUN;
+
+/*匯出資料*/
+ PROC EXPORT DATA=CLASS.DF 
+ OUTFILE = 'C:\Users\06170130\SAS\CLASS0321.CSV'
+ DBMS=CSV;/*輸出檔案形式*/
+ RUN;
+
+
+/*匯入資料*/
+PROC IMPORT DATAFILE = 'C:\Users\06170130\SAS\CLASS0321.CSV'/*輸入入境*/
+   OUT=DF1 /*存在work底下*/
+   DBMS=CSV REPLACE;
+   RUN;
+
+/*顯示結果*/
+PROC PRINT DATA = CLASS.DF (OBS=2); /*看資料長怎樣 在class的茲料 obs是顯示前兩筆*/
+RUN;
+
+/*運算 在data下座演算 proc 要用sql*/
+
+DATA Df0328;
+SET Df; /*呼叫檔案*/
+X1_C = X1 - 2.6; /*去中心化 當變相之間相關性過高時，所有變相要放入模型當中去建構模型時，會造成估計不穩*/
+Y1_R = Y1/2; /*看比例*/
+RUN;
+
+/*篩選小於4*/
+
+DATA Df1_S;
+SET Df1;
+IF X1<4; /*留下小於4*/
+RUN;
+
+DATA DF0328;
+	SET DF0328;
+	FORMAT X1_S  $1.;/*$：字串*/
+	IF X1_C < 0 THEN X1_S  ='-' ;
+	ELSE X1_S='+' ;
+RUN;
+
+DATA DF0328_R1;
+	SET DF0328;
+	KEEP Y1 Y1_R;/*保留Y1 Y1_R */
+RUN; 
+
+DATA DF0328_R2;
+	SET DF0328;
+	DROP  X1  X1_C  X1_S;/* DROP 刪X1  X1_C  X1_S */
+RUN;
+
+/*變更名稱*/
+DATA  AA.CLASS0330_R2;
+SET AA.CLASS0330_R2;
+RENAME  R=RATIO;/*將就的變相名稱r變成ratio*/
+RUN;
+/*日期*/
+DATA DATE;
+SET Df1;
+FORMAT DATE1 DATE2 DATE1_PLUUMONTH mmddyy10.;
+DATE1 = MDY(1,15,2013);/*1960 1 1 相差天數*/
+DATE2 = MDY(2,15,2015);
+DATE1_YEAR = YEAR(DATE1); /*date1的年*/
+DATE2_MONTH = MONTH(DATE2); /*date2的月*/
+DATE1_WEEK = WEEK(DATE1);/*date 1 的週*/
+DATE1_NEXT = INTNX('MONTH',DATE1,2,1); /*date1的下兩個月的第一天*/
+DATE1_NEXT = INTNX('MONTH',DATE1,‘beginning’); /*date1的下一個月第一天 end:最後一天 middle:15號 same:同一天*/
+MONTHS_BW = INTCK('MONTH',DATE1,DATE2); /*date1到date2的幾月*/
+tday=Today(); /*今天*/
+RUN;
+
+PROC SORT DATA=AA.CLASS0330_R3;
+BY DESCENDING X;/*遞減*/
+RUN;
+
+/*名字分成first name 根last name*/
+DATA NAME;
+INPUT STRING $20.;
+FIRST_N = SCAN(STRING,1);/*掃空格的第一個（名）*/
+LAST_N = SCAN(STRING,-1); /*掃空格的後一個（姓）*/
+DATALINES;
+John Simth/*含空格*/
+Jane Cook
+;
+RUN;
+/*算名字有多長*/
+DATA NAME_R;
+SET NAME;
+LEN = LENGTHN(STRING);
+RUN;
+/*抓字*/
+DATA NAME_R;
+SET NAME;
+LEN=LENGTHN(STRING);
+W_O = FIND(FIRST_N,'o');
+AA = SUBSTR(STRING,3,4);/*萃取 從第三個位元開始抓四個位元*/
+RUN;
+/*資料合併*/
+DATA BODY;
+INPUT STRING$10. WT;
+DATALINES;
+JOHN SIMTH 70
+JANE COOK 50
+;
+RUN;
+另一種
+DATA BODY;
+INPUT STRING$10. WT;
+DATALINES;
+JOHN SIMTH 70
+JANE COOK 50
+;
+RUN;
+
+
+DATA NAME_R2;
+SET NAME_R;
+IF LAST_N='SMITH' THEN DELETE;
+RUN;
+
+DATA M_NAME_BODY;
+MERGE NAME_R2(IN=X) BODY(IN=Y);
+BY STRING;
+IF Y;
+RUN;
+
+/*群組*/
+DATA CITY;
+INPUT ID CITY$2. X1 X2;/*大寫是兩字元*/
+CARDS;
+1 A 45 18
+1 A 23 3
+3 A 25 35
+4 B 30 0
+5 B 11 77
+6 C 2 12
+7 C 14 72
+8 D 56 39
+9 D 32 17
+10 D 34 9
+;
+RUN;
+/*城市的資料加總*/
+PROC SUMMARY DATA = CITY NWAY;/* NWAY：只留其中一種型態*/
+CLASS CITY;/*用程式做群組 依據city*/
+VAR X1 X2;/*找出x1 x2*/
+OUTPUT OUT=SUM0418  SUM=;
+RUN;
+/*城市的資料平均*/
+PROC MEANS DATA=CITY NWAY;
+CLASS CITY; /*用程式做群組 依據city*/
+VAR X1 X2;
+OUTPUT OUT=MEAN0418  MEAN=;
+RUN;
+
+DATA GP_CITY;
+SET CITY; /*set加檔名 */
+BY CITY;/*city 為變相名稱*/
+IF FIRST.CITY THEN OUTPUT;/* city 為變相名稱 將重複的資料抓第一筆*/
+RUN;
+/*最後一次住院和出院的日期*/
+DATA GP_CITY_LT;
+SET CITY; 
+BY CITY;
+IF LAST.CITY THEN OUTPUT; /* city 為變相名稱 將重複的資料抓最後一筆*/
+RUN;
+
+PROC MEANS DATA=SASHELP.CARS;
+VAR Weight;
+RUN;
+PROC UNIVARIATE DATA = SASHELP.CARS;
+VAR WEIGHT;
+RUN;
+
+PROC freq DATA = SASHELP.CARS;/*做列連表*/
+TABLES MAKE;
+RUN;
+
+PROC FREQ DATA = SASHELP.CARS;
+TABLES TYPE*ORIGIN;/*車型跟來自於哪裡*/
+RUN;
+/*bar chart*/
+PROC GCHART DATA=SASHELP.CARS;
+VBAR MPG_CITY;
+RUN;
+
+PROC GCHART DATA=SASHELP.CARS;
+VBAR MPG_CITY/LEVELS=5;/*分5組*/
+RUN;
+
+PROC GCHART DATA=SASHELP.CARS;
+VBAR MPG_CITY/DISCRETE;/*依數值*/
+RUN;
+/*畫橫的長條圖*/
+PROC GCHART DATA=SASHELP.CARS;
+HBAR MPG_CITY/DISCRETE;
+RUN;
+/*pie chart*/
+PROC GCHART DATA=SASHELP.CARS;
+PIE MPG_CITY/DISCRETE VALUE=OUTSIDE
+PERCENT=OUTSIDE SLICE=INSIDE ;
+RUN;
+/*點狀圖*/
+PROC GPLOT DATA=SASHELP.CARS;
+PLOT MPG_CITY*WEIGHT;
+RUN;
+
+PROC GPLOT DATA=SASHELP.CARS;
+PLOT MPG_CITY（Ｙ軸）*WEIGHT（Ｘ軸）=ORIGIN;
+RUN;
+/*相關係數*/
+PROC CORR DATAA=SASHELP.CARS;
+VAR MSRP MPG_CITY WEIGHT;
+RUN;
+/*回歸分析*/
+PROC REG DATAA=SASHELP.CARS;
+MODLE MPG_CITY = WEIGHT MSRP;
+RUN;
+
+/* V= the type of point  */
+/* I= none (not to plot a line joining the points) */
+/* I = r (regression line along with the scatter) */
+/* C= the color of the plot  [若程式沒有變色，則嘗試 (C=blue)]  */ 
+SYMBOL1 V=circle C=black I=none;
+SYMBOL2 V=star   C=red   I=none;
+SYMBOL3 V=square  C=blue  I=none;
+
+CLASS TYPE;
+MODLE MPG= FOREIGN;/*依據FOREIGN 分類*/
+RUN;
+
+/*程式碼說明*/
+TRIM or COMRESS 將字串中的空白欄位消去 
+|| 將兩個字串合併 
+ex.trim(ID||birthday);compress(ID||birthday);trim(ID)||trim(birthday)（生日加上身分證字號去除空白）
+/*文轉數 數轉文*/
+data river;
+date_t = today();/*今天日期*/
+date_1='19700101'; /*出生日期（文字）*/
+date_2=imput(data_1,yymmd8.); /*date_1轉成數自*/
+birth='04oct00'd; /*注意d前面不用空格*/
+bmon=month(birth);
+age=(date_t-birth)/365.25; age_i= int((date_t-birth)/365.25);/*算年齡*/
+/*age_i=int(date_t-birth)/365.25 or age_f=year(date_t-birth)不正確*/
+run;
+
+/*5/2*/
+DATA AA;
+NAME = 'SIMTH, JOHN';
+FIRST = SCAN(NAME,2,' ' );/*由前面變相name掃出 掃出姓*/
+LAST = SCAN(NAME,1,' ' )'/*掃出名*/
+RUN;
+
+DATA BB;
+SET AA;
+IF NAME = 1 THEN FNAME =' MR.'||TRIM(FIRST)||’ ‘||LAST;/*||將兩個字串合併
+*/
+/*ELSE IF MALE = 0 THEN FNAME = 'MRS.'; 加上性別*/
+RUN;
+/*小考題目*/
+LIBNAME DATA 'C:\DATA';
+Proc FREQ DATA=DATA.h_nhi_opdte10301_10;
+TABLE AGE;
+RUN;
+
+DATA NHI;
+SET DATA.h_nhi_opdte10301_10;
+IF AGE IN ('0-14天','29天-未滿1歲','15-28天')THEN AGE1=1;
+ELSE IF AGE IN ('85歲以上') THEN AGE1=86;
+ELSE AGE1=SUBSTR (AGE,1,2); 
+BIRTH_Y=103-AGE1;/*103出生的年紀 西元年加1911*/
+KEEP ID FEE_YM AGE AGE1 BIRTH_Y ID_S CASE TYPE;/*保留ID FEE_YM AGE AGE1 BIRTH_Y ID_S CASE TYPE */
+RUN;
+
+/*SQL*/
+validate：用來檢查sql語法是否錯誤
+PROC SQL;
+CREATE TABLE NHI/*建立一個table*/
+SELECT ID,FEE_YM,CURE_ITEM_NO1,FUNC_TYPE,ICD9CM_1/*選擇欄位 用,分隔欄位*/
+FROM DATA.h_nhi_opdte10301_10/*從這個檔案*/
+WHERE FUNC_TYPE CONTAINS '01'/*留下01*/
+ORDER BY FUNC_TYPE,ID;/*用FUNC_TYPE,ID 排列*/
+QUIT;
+/*SQL由後面開始讀程式碼*/
+/*全部變相留下 ＊*/
+PROC SQL;
+SELECT *
+FROM DATA.h_nhi_opdte10301_10
+WHERE FUNC_TYPE contains '04'
+ORDER BY FUNC_TYPE,ID;/*這是一句話*/
+QUIT;
+/*欄位運算*/
+PROC SQL;
+CREATE TABLE NHI1 AS/*建立一個新的table*/
+SELECT ID,FEE_YM,CURE_ITEM_NO1,FUNC_TYPE,ICD9CM_1,T_DOT*0.9 AS 
+TOTAL_FEE/*另一個總預算的名稱*/
+FROM DATA.h_nhi_opdte10301_10
+WHERE FUNC_TYPE contains '04'
+ORDER BY FUNC_TYPE,ID;
+QUIT;
+
+PROC SQL;
+CREATE TABLE NHI2 AS 
+SELECT ID,FEE_YM,CURE_ITEM_NO1,FUNC_TYPE,ICD9CM_1,T_DOT*0.9 AS 
+TOTAL_FEE,INT((T_DOT-PART_DOT)*0.9) AS GOV_MONEY/*取整數*/
+FROM DATA.h_nhi_opdte10301_10
+WHERE FUNC_TYPE contains '04'
+ORDER BY FUNC_TYPE,ID;
+QUIT;
+/*去除相同資料*/
+PROC SQL;
+CREATE TABLE ID AS
+SELECT DISTINCT ID/*看有多少id*/
+FROM DATA.h_nhi_opdte10301_10;
+QUIT;
+/*where 的語法*/
+PROC SQL;
+CREATE TABLE NHI3 AS 
+SELECT ID,FEE_YM,CURE_ITEM_NO1,FUNC_TYPE,ICD9CM_1,T_DOT*0.9 AS 
+TOTAL_FEE,INT((T_DOT-PART_DOT)*0.9) AS GOV_MONEY FROM DATA.h_nhi_opdte10301_10
+WHERE TOTAL_DOT > 1000/*指定紀錄 因為TOTAL_FEE不存在所以用TOTAL_DOT*/
+ORDER BY ID,TOTAL_DOT;
+QUIT;
+
+PROC SQL;
+CREATE TABLE NHI4 AS 
+SELECT ID,FEE_YM,CURE_ITEM_NO1,FUNC_TYPE,ICD9CM_1,INT((T_DOT-PART_DOT)*0.9) AS GOV_MONEY
+FROM DATA.h_nhi_opdte10301_10
+WHERE FUNC_TYPE IN ('09','10','11')/*在9 10 11月*/
+ORDER BY FUNC_TYPE,ID;
+QUIT;
+
+PROC SQL;
+CREATE TABLE NHI5 AS 
+SELECT ID,FEE_YM,CURE_ITEM_NO1,FUNC_TYPE,ICD9CM_1,INT((T_DOT-PART_DOT)*0.9) AS GOV_MONEY
+FROM DATA.h_nhi_opdte10301_10
+WHERE ICD9CM_1 IS MISSING/*資料不見 或用is null*/
+ORDER BY FUNC_TYPE,ID;
+QUIT;
+PROC SQL;
+CREATE TABLE NHI5 AS 
+SELECT ID,FEE_YM,CURE_ITEM_NO1,FUNC_TYPE,ICD9CM_1,INT((T_DOT-PART_DOT)*0.9) AS GOV_MONEY
+FROM DATA.h_nhi_opdte10301_10
+WHERE FUNC_TYPE ?'02'/*包含02的都抓*/
+ORDER BY FUNC_TYPE,ID;
+QUIT;
+
+PROC SQL;
+CREATE TABLE NHI7 AS 
+SELECT ID,FEE_YM,CURE_ITEM_NO1,FUNC_TYPE,ICD9CM_1,INT((T_DOT-PART_DOT)*0.9) AS GOV_MONEY
+FROM DATA.h_nhi_opdte10301_10
+WHERE T_DOT BETWEEN 1000 AND 2000/*介在1000跟2000之間*/
+ORDER BY FUNC_TYPE,ID;
+QUIT;
+
+PROC SQL;
+CREATE TABLE NHI8 AS 
+SELECT DISTINCT ID,FEE_YM,CURE_ITEM_NO1,FUNC_TYPE,ICD9CM_1,SUM(INT((T_DOT-PART_DOT)*0.9)) AS GOV_MONEY
+FROM DATA.h_nhi_opdte10301_10
+WHERE FUNC_TYPE('09','10','11')
+GROUP BY ID,CASE_TYPE;
+QUIT;
