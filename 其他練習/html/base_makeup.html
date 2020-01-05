@@ -1,0 +1,237 @@
+<!DOCTYPE HTML>
+<!--
+	Urban by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<head>
+
+<link rel="shortcut icon" href="http://myweb.scu.edu.tw/images/favicon.ico" type="image/x-icon" />
+<link rel="Bookmark" href="http://myweb.scu.edu.tw/images/favicon.ico" type="image/x-icon" />
+
+ <!-- Google Analytics -->
+ <script>
+ (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+ })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+ 
+ ga('create', 'UA-135208939-1', 'auto');
+ ga('send', 'pageview');
+ </script>
+ <!-- End Google Analytics -->
+ 
+ <meta http-equiv="content-type" content="text/html; charset=utf-8">
+ <meta http-equiv="content-language" content="zh-tw">
+ 
+ <!-- 追蹤標記 -->
+<script
+  src="https://code.jquery.com/jquery-3.4.0.js"
+  integrity="sha256-DYZMCC8HTC+QDr5QNaIcfR7VSPtcISykd+6eSmBW5qo="
+  crossorigin="anonymous"></script>
+
+<!-- JQuery主程式碼 -->
+<script type = "text/javascript" >
+    
+    function getSelectedText() {
+    if (window.getSelection) {
+        return window.getSelection().toString();
+    } else if (document.selection) {
+        return document.selection.createRange().text;
+    }
+    return '';
+}
+
+
+    
+jQuery(document).ready(function() {
+    jQuery('body').on('mouseup', function(ccp) { 
+            var selection = getSelectedText();
+        var maxLength = 150; 
+        if (selection && (selection = new String(selection).replace(
+            /^\s+|\s+$/g, ''))) {
+            var textLength = selection.length; 
+            if (selection.length > maxLength) {
+                selection = selection.substr(0, maxLength) +
+                    "..."
+            } 
+            else {
+                selection = selection; 
+            } ga('send', 'event', '網頁內容選取', ' 發生網址: ' +
+                document.location.pathname, '選取內容: ' +selection,
+                textLength);
+            
+        }
+    });
+}); </script>
+<!-- JQuery主程式碼 END -->
+
+
+		<title>Urban by TEMPLATED</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<meta name="description" content="這是一個專為彩妝新手訂製而成的網頁，我們主要介紹一些新手的知識以及商品的介紹。希望能幫助彩妝新手能快速上手，有更好的彩妝技巧!">
+ 		<meta name="keywords" content="彩妝新手">
+ 		<meta name="author" content="東吳大學">
+ 		<meta name="generator" content="frontpage">
+ 		<meta name="distribution" content="台灣">
+ 		
+ 		<!-- FB OG -->
+ 		<meta property="og:title" content="一起變漂亮" />
+		<meta property="og:type" content="彩妝新手介紹" />
+		<meta property="og:url" content="http://myweb.scu.edu.tw/~06170186/homepage.html" />
+		<meta property="og:site_name" content="一起變漂亮" />
+		<meta property="og:description" content="美妝介紹網站" />
+</head>
+	<body>
+
+		<!-- Main -->
+			<div id="commodity">
+
+				<!-- Section1 -->
+					<section class="wrapper style1">
+						<div class="inner">
+							<!-- 2 Columns -->
+								<div class="flex flex-2">
+									<div class="col col1">
+										<div class="image round fit">
+											<a href="generic.html" class="link"><img src="images/b_01.jpg" alt="" /></a>
+										</div>
+									</div>
+									<div class="col col2">
+										<h3><font face="微軟正黑體" size="7">Maybelline Fit me反孔特霧粉底</font></h3>
+										<p><font face="微軟正黑體" size="6">適合使用對象：和性肌膚、油性肌膚</font></p>
+										<p><font face="微軟正黑體" size="6">妝效：控油、修飾毛孔、霧面妝感</font></p>
+									</div>
+								</div>
+						</div>
+					</section>
+
+				<!-- Section2 -->
+					<section class="wrapper style2">
+						<div class="inner">
+							<div class="flex flex-2">
+								<div class="col col2">
+									<h3><font face="微軟正黑體" size="7">ETUDE HOUSE即可拍～微霧光無暇氣墊粉餅</font></h3>
+										<p><font face="微軟正黑體" size="6">中性膚質、乾性膚質 </font></p>
+										<p><font face="微軟正黑體" size="6">妝效：遮瑕、修飾毛孔、微霧面妝感</font></p>
+								</div>
+								<div class="col col1 first">
+									<div class="image round fit">
+										<a href="generic.html" class="link"><img src="images/b_02.jpg" alt="" /></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+
+				<!-- Section3 -->
+					<section class="wrapper style1">
+						<div class="inner">
+							<!-- 2 Columns -->
+								<div class="flex flex-2">
+									<div class="col col1">
+										<div class="image round fit">
+											<a href="generic.html" class="link"><img src="images/b_03.jpg" alt="" /></a>
+										</div>
+									</div>
+									<div class="col col2">
+										<h3><font face="微軟正黑體" size="7">innisfree我的訂製粉底</font></h3>
+										<p><font face="微軟正黑體" size="6">適合使用對象：各種膚質</font></p>
+										<p><font face="微軟正黑體" size="6">妝效：依照保濕度、遮瑕度、色號多達50種妝效</font></p>
+									</div>
+								</div>
+						</div>
+					</section>
+
+				<!-- Section4 -->
+					<section class="wrapper style2">
+						<div class="inner">
+							<div class="flex flex-2">
+								<div class="col col2">
+									<h3><font face="微軟正黑體" size="7">Sulwhasoon雪花秀第四代氣墊粉底</font></h3>
+										<p><font face="微軟正黑體" size="6">適合使用對象：中性肌膚、乾性肌膚</font></p>
+										<p><font face="微軟正黑體" size="6">妝效：服貼自然有光澤感、高遮瑕度、修飾毛孔</font></p>
+								</div>
+								<div class="col col1 first">
+									<div class="image round fit">
+										<a href="generic.html" class="link"><img src="images/b_04.jpg" alt="" /></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+
+				<!-- Section5 -->
+					<section class="wrapper style1">
+						<div class="inner">
+							<!-- 2 Columns -->
+								<div class="flex flex-2">
+									<div class="col col1">
+										<div class="image round fit">
+											<a href="generic.html" class="link"><img src="images/b_05.jpg" alt="" /></a>
+										</div>
+									</div>
+									<div class="col col2">
+										<h3><font face="微軟正黑體" size="7">RCMA透明蜜粉</font></h3>
+										<p><font face="微軟正黑體" size="6">適合使用對象：中性肌膚、乾性肌膚</font></p>
+										<p><font face="微軟正黑體" size="6">妝效：控油效果普通、顏色透明不影響妝容、服貼、有定妝的效果</font></p>
+									</div>
+								</div>
+						</div>
+					</section>
+
+				<!-- Section6 -->
+					<section class="wrapper style2">
+						<div class="inner">
+							<div class="flex flex-2">
+								<div class="col col2">
+									<h3><font face="微軟正黑體" size="7">漾緁輕妝綺肌長效粉餅 <進化版></font></h3>
+										<p><font face="微軟正黑體" size="6">適合使用對象：混合姓肌膚、油性肌膚</font></p>
+										<p><font face="微軟正黑體" size="6">妝效：霧面平滑、膚色校正、控油</font></p>
+								</div>
+								<div class="col col1 first">
+									<div class="image round fit">
+										<a href="generic.html" class="link"><img src="images/b_06.jpg" alt="" /></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+									
+			
+		<!-- Footer -->
+				<footer id="footer">
+					<div class="copyright">
+						<ul class="icons">
+							<li><a href="https://twitter.com/intent/tweet?url=http://myweb.scu.edu.tw/~06170130/net/homepage.html" onclick="ga('send','event','首頁前往twitter按鈕','share','book share','1000');"><img src="images/icons8-twitter-64.png"></a></li>
+							<li><a href="http://www.facebook.com/sharer.php?u=http://myweb.scu.edu.tw/~06170130/net/homepage.html" onclick="ga('send','event','首頁前往facebook按鈕','share','book share','1000');"><img src="images/icons8-facebook-old-64.png"></a></li>
+							<li><a href="http://instagram.com/###?ref=badge" onclick="ga('send','event','首頁前往ig按鈕','share','book share','1000');"><img src="images/icons8-instagram-old-64.png"></a></li>
+							<li><a href="http://line.naver.jp/R/msg/text/?http://myweb.scu.edu.tw/~06170130/net/homepage.html" onclick="ga('send','event','首頁前往line按鈕','share','book share','1000');"><img src="images/icons8-line-64.png"></a></li>								
+						</ul>
+					</div>
+				</footer>			
+
+			</div>
+
+
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+			<button type="button" id="BackTop" class="toTop-arrow" style="float:right"><img src="images/icons8-go-back-64.png" alt="置頂" /></button>
+			<script>
+				$(function(){
+					$('#BackTop').click(function(){ 
+					$('html,body').animate({scrollTop:0}, 333);
+						});
+				$(window).scroll(function() {
+				if ( $(this).scrollTop() > 300 ){
+					$('#BackTop').fadeIn(222);
+					} else {
+					$('#BackTop').stop().fadeOut(222);
+						}
+					}).scroll();
+				});
+			</script>
+
+	</body>
+</html>
