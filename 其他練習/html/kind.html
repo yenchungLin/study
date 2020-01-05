@@ -1,0 +1,146 @@
+<!DOCTYPE HTML>
+<!--
+	Urban by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<head>
+
+<link rel="shortcut icon" href="http://myweb.scu.edu.tw/images/favicon.ico" type="image/x-icon" />
+<link rel="Bookmark" href="http://myweb.scu.edu.tw/images/favicon.ico" type="image/x-icon" />
+
+ <!-- Google Analytics -->
+ <script>
+ (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+ })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+ 
+ ga('create', 'UA-135208939-1', 'auto');
+ ga('send', 'pageview');
+ </script>
+ <!-- End Google Analytics -->
+ 
+ <meta http-equiv="content-type" content="text/html; charset=utf-8">
+ <meta http-equiv="content-language" content="zh-tw">
+ 
+ <!-- 追蹤標記 -->
+<script
+  src="https://code.jquery.com/jquery-3.4.0.js"
+  integrity="sha256-DYZMCC8HTC+QDr5QNaIcfR7VSPtcISykd+6eSmBW5qo="
+  crossorigin="anonymous"></script>
+
+<!-- JQuery主程式碼 -->
+<script type = "text/javascript" >
+    
+    function getSelectedText() {
+    if (window.getSelection) {
+        return window.getSelection().toString();
+    } else if (document.selection) {
+        return document.selection.createRange().text;
+    }
+    return '';
+}
+
+
+    
+jQuery(document).ready(function() {
+    jQuery('body').on('mouseup', function(ccp) { 
+            var selection = getSelectedText();
+        var maxLength = 150; 
+        if (selection && (selection = new String(selection).replace(
+            /^\s+|\s+$/g, ''))) {
+            var textLength = selection.length; 
+            if (selection.length > maxLength) {
+                selection = selection.substr(0, maxLength) +
+                    "..."
+            } 
+            else {
+                selection = selection; 
+            } ga('send', 'event', '網頁內容選取', ' 發生網址: ' +
+                document.location.pathname, '選取內容: ' +selection,
+                textLength);
+            
+        }
+    });
+}); </script>
+<!-- JQuery主程式碼 END -->
+
+
+		<title>一起變漂亮-目錄</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<meta name="description" content="這是一個專為彩妝新手訂製而成的網頁，我們主要介紹一些新手的知識以及商品的介紹。希望能幫助彩妝新手能快速上手，有更好的彩妝技巧!">
+ 		<meta name="keywords" content="彩妝新手">
+ 		<meta name="author" content="東吳大學">
+ 		<meta name="generator" content="frontpage">
+ 		<meta name="distribution" content="台灣">
+ 		
+ 		<!-- FB OG -->
+ 		<meta property="og:title" content="一起變漂亮" />
+		<meta property="og:type" content="彩妝新手介紹" />
+		<meta property="og:url" content="http://myweb.scu.edu.tw/~06170186/homepage.html" />
+		<meta property="og:site_name" content="一起變漂亮" />
+		<meta property="og:description" content="美妝介紹網站" />
+</head>
+	<body>
+		<!-- Main -->
+			<div id="kind">
+
+				<!-- Section -->
+					<section class="wrapper style1">
+						<div class="inner">
+							<header class="align-center">
+								<h2><font face="微軟正黑體">一起變漂亮</font></h2>
+							</header>
+							<div class="flex flex-3">
+								<div class="col align-center">
+									<div class="image round fit">
+										<img src="images/new.jpg" alt="" />
+									</div>
+									<p><font face="微軟正黑體">新手知識</font></p>
+									<a href="http://myweb.scu.edu.tw/~06170130/net/new.html" onclick="ga('send','event','首頁前往新手知識','share','book share','1000');" class="button">前往</a>
+								</div>
+								<div class="col align-center">
+									<div class="image round fit">
+										<img src="images/base_makeup.jpg" alt="" />
+									</div>
+									<p><font face="微軟正黑體">底妝</font></p>
+									<a href="http://myweb.scu.edu.tw/~06170130/net/base_makeup.html" onclick="ga('send','event','首頁前往底妝','share','book share','1000');" class="button"><font face="微軟正黑體">前往</font></a>
+								</div>
+								<div class="col align-center">
+									<div class="image round fit">
+										<img src="images/maintenance.jpg" alt="" />
+									</div>
+									<p><font face="微軟正黑體">保養</font></p>
+									<a href="http://myweb.scu.edu.tw/~06170130/net/maintenance.html" onclick="ga('send','event','首頁前往保養','share','book share','1000');" class="button"><font face="微軟正黑體">前往</font></a>
+								</div>
+							</div>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+				<footer id="footer">
+					<div class="copyright">
+						<ul class="icons">
+							<li><a href="https://twitter.com/intent/tweet?url=http://myweb.scu.edu.tw/~06170130/net/homepage.html" onclick="ga('send','event','首頁前往twitter按鈕','share','book share','1000');"><img src="images/icons8-twitter-64.png"></a></li>
+							<li><a href="http://www.facebook.com/sharer.php?u=http://myweb.scu.edu.tw/~06170130/net/homapge.html" onclick="ga('send','event','首頁前往facebook按鈕','share','book share','1000');"><img src="images/icons8-facebook-old-64.png" onclick="ga('send','event','首頁前往ig按鈕','share','book share','1000');"></a></li>
+							<li><a href="http://instagram.com/###?ref=badge"><img src="images/icons8-instagram-old-64.png"></a></li>
+							<li><a href="http://line.naver.jp/R/msg/text/?http://myweb.scu.edu.tw/~06170130/net/homepage.html" onclick="ga('send','event','首頁前往line按鈕','share','book share','1000');"><img src="images/icons8-line-64.png"></a></li>								
+						</ul>
+					</div>
+				</footer>
+				
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
