@@ -1,8 +1,12 @@
 # _**資料結構與演算法**_       
 ## 個人介紹：  
-      
+* 姓名：林妍均   
+* 就讀學校：東吳大學巨量資料管理學院學士學位學程 雙主修：東吳大學心理系   
+* 未來目標：分析研究人類行為      
 ## 上完本課程心得：            
-經過這學期的磨練，我覺得我自己有程式碼建立朋友的關係。以前只要看到程式碼就覺得很排斥，尤其是在前幾份作業的時候，觀念都不難啊，但是要把它轉成程式碼就覺得很痛苦，認為只給兩個星期實在是太短了，因為對程式碼不熟。在上過演算法後，我自己有找到輔助的trace工具來幫助我學習程式的語法。舉例來說，寫回圈可能不只對我來說很難，不懂說while、if、else、return應該要怎麼對齊，才會跳出迴圈，所以常常寫出「無窮迴圈」。利用trace工具後我覺得有了解說怎麼樣寫出迴圈的邏輯。在前幾次寫作業的時候，一直寫寫改改，而且常常會寫到壓線交出去，最受挫的就是助教執行程式碼時，看到自己寫的程式碼沒有拿到滿分。有幾次是比較早寫完，交出去後，看到執行的測值有錯誤，心情真的覺得很糟，然後一度呈現「習得無助」。在一度想放棄的時候，看到周圍的朋友以前寫程式跟我差不多的人，都可以執行程式後拿滿分，我就想「他們都可以，為什麼我不能夠做到！也許只是因為我開竅得比別人晚啊！沒有道理說我做不到。」於是當我在上一次作業執行測值拿到滿分時，真的很高興，一則慶幸自己的努力，二則感謝自己願意堅持下去。而且我在寫作業所花的時間越來越少，以前是要寫滿兩個禮拜，但是現在只要寫幾天，有時寫幾個小時就寫完了，我覺得很神奇，因為以前覺得好像永遠都做不到。雖然我在班上進度的速度，可能比不上一些進步神速的同學們，但是我在寫程式這一塊，我覺得比前兩年進步非常多，突然想到一句話「不是做不到，只是沒有做」，雖然有點後悔自己為什麼不早一點對程式碼感到興趣，現在來得及喜歡，感覺真好。資料結構與演算法這門課除了讓我程式碼有進步外，我覺得它有幫助我進行思考，想事情變得有邏輯條理。謝謝老師讓我學習如何自救，謝謝自己沒有放棄堅持不懈。   
+我覺得這學期真的過得很充實，修28學分真的是很操，而且演算法真的是需要自己去動腦筋想，所以需要花的時間真的很多，覺得時間不夠用。   
+資料結構與演算法這門課除了讓我程式碼有進步外，我覺得它有幫助我進行思考，想事情變得有邏輯條理。謝謝老師讓我學習如何自救，謝謝自己沒有放棄堅持不懈。   
+![school](https://github.com/yenchungLin/study/blob/master/picture/school.jpg)    
 ## 學演算法的目的：      
 *   漸少記憶體    
 *   加快運算時間    
@@ -30,11 +34,12 @@
 開學週   
 # [WEEK 2](https://github.com/yenchungLin/study/tree/master/WEEK%202)
 ## [linked_list]()
-> 利用電腦中記憶體是不連續的、隨機的方式，已結點連結的方式進行資料儲存。優點是插入即刪除資料方便。缺點是無法像靜態資料隨機讀取資料，需要透過依循的方式找到資料。     
+利用電腦中記憶體是不連續的、隨機的方式，已結點連結的方式進行資料儲存。優點是插入即刪除資料方便。缺點是無法像靜態資料隨機讀取資料，需要透過依循的方式找到資料。     
 Linked_list的運作方式可分為：     
->> *   走訪
->> *   增加節點
->> *   刪除節點     
+*   走訪   
+*   增加節點   
+*   刪除節點  
+*   反轉     
 [linked_list程式碼]()
 # [WEEK 3](https://github.com/yenchungLin/study/tree/master/WEEK%203)
 ## [stack]()   
@@ -45,64 +50,133 @@ Linked_list的運作方式可分為：
  *   pop : 刪除頂端資料，並回傳新堆疊
  *   isEmpty : 判斷堆疊是否為空堆疊
  *   full : 判斷堆疊是否已滿    
+ ### 流程圖：   
+![流程圖](https://github.com/yenchungLin/study/blob/master/picture/stack.png)   
 [stack程式碼]()   
 ## [queue]()
 
-  先進先出的資料型態結構。像過票一樣，前面的人通過，後面的人才能通過。   
- 五個基本工作定義：     
+先進先出的資料型態結構。像過票一樣，前面的人通過，後面的人才能通過。   
+五個基本工作定義：     
  *   create : 建立一個空佇列
  *   add : 將資料加入尾端，回傳新佇列
  *   delete : 將資料尾端刪除，回傳新佇列
  *   front : 回傳前端的值
  *   empty : 佇列是否為空集合    
+### 流程圖：   
+![流程圖](https://github.com/yenchungLin/study/blob/master/picture/queue.png) 
  [queue程式碼]() 
 # [WEEK 4](https://github.com/yenchungLin/study/tree/master/WEEK%204)
 
 ## [insertion_sort]()
-> 在一串數列中，找出缺少的數字與重複的數字。   
->  ![流程圖](https://github.com/yenchungLin/study/blob/master/picture/insertion_sort.png)  
-[insertion_sort程式碼]() 
-
-## [quick_sort]()
-> 在一串數列中找一個基準值，然後將數列中的數值與基準值進行比大小，將小於基準值歸類在基準值到左邊，大於基準值歸類在基準值到右邊，就能夠找出基準值在數列中的哪個位置。然後將心分好的這兩群中，在各別選新的基準值，重複上輪的比較。    
->  ![流程圖](https://github.com/yenchungLin/study/blob/master/homework助教請開/HW1/quick_sort.png)      
->  ![流程圖2](https://github.com/yenchungLin/study/blob/master/homework助教請開/HW1/quick_sort2.png)     
-> *  [心得](https://github.com/yenchungLin/study/blob/master/homework助教請開/HW1/quick_sort心得.txt)   
+### 原理說明：   
+從第一個元素，認為第一個元素已經被排序。   
+取出下一個元素，在已經排序的元素中從後往前找。   
+若已排序元素大於新元素，將元素一到下一個。   
+直到已排序元素小於等於新元素，則將新元素插入後，重複執行上一個步驟。  
+* 平均時間複雜度：O(n^2)   
+* 最佳時間複雜度：O(n)   
+* 最差時間複雜度：O(n^2) 
+* 空間複雜度：O(1)   
+* 穩定度：不穩定      
+### 流程圖：   
+![流程圖](https://github.com/yenchungLin/study/blob/master/picture/insertion_sort.gif)  
+## [quick_sort]()   
+### 原理說明：   
+在一串數列中找一個基準值，然後將數列中的數值與基準值進行比大小，將小於基準值歸類在基準值到左邊，大於基準值歸類在基準值到右邊，就能夠找出基準值在數列中的哪個位置。然後將心分好的這兩群中，在各別選新的基準值，重複上輪的比較。   
+* 平均時間複雜度：O(n log n)   
+* 最佳時間複雜度：O(n log n)   
+* 最差時間複雜度：O(n^2) 
+* 空間複雜度：O(n)   
+* 穩定度：不穩定      
+### 流程圖：   
+![流程圖](https://github.com/yenchungLin/study/blob/master/picture/quick_sort.png)      
+![流程圖2](https://github.com/yenchungLin/study/blob/master/picture/quick_sort2.png)  
+    
 [quick_sort程式碼]()    
 # [WEEK 5](https://github.com/yenchungLin/study/tree/master/WEEK%205)   
 放假   
 # [WEEK 6](https://github.com/yenchungLin/study/tree/master/WEEK%206)
 ## [heap_sort](https://github.com/yenchungLin/study/blob/master/homework助教請開/HW2/HW2_heap_sort.py.html)
-[heap]()    
-可分為min heap與max heap。heap_sort則是利用母節點與子結點進行大小比較排序。      
-> *   min heap:頂端的樹根最小，且母節點的直橫小於等於子結點。    
-> *   max heap:頂端的樹根最大，且母節點的直橫大於等於子結點。     
->  ![流程圖](https://github.com/yenchungLin/study/blob/master/picture/heap_sort/heap_sort.png)    
+## [heap]()    
+### 原理說明：   
+eap sort是一個節點要先長滿兩個子節點，才能再往下長，這表示說陣列中，不能有空值的現象。   
+母節點要比子結點大，若比到樹根時，將樹根與最後一個葉子節點交換，再刪除最右一個葉子節點。   
+ 
+* 平均時間複雜度：O(n log n)   
+* 最佳時間複雜度：O(n log n)   
+* 最差時間複雜度：O(n log n) 
+* 空間複雜度：O(n)   
+* 穩定度：不穩定    
+### 流程圖：   
+![流程圖](https://github.com/yenchungLin/study/blob/master/picture/heap_sort/heap_sort.png)    
 [heap_sort程式碼]() 
 # [WEEK 7](https://github.com/yenchungLin/study/tree/master/WEEK%207)
 ## [merge_sort]()
-merge_sort先將資料進行分組，倆倆比大小後，再丟入較大的組進行大小比較。
->  ![流程圖](https://github.com/yenchungLin/study/blob/master/picture/merge_sort.png)    
+### 原理說明：   
+先把數列分半再分半，分到不能再分割的時候，再進行大小比較合併。   
+* 平均時間複雜度：O(n log n)   
+* 最佳時間複雜度：O(n log n)   
+* 最差時間複雜度：O(n log n) 
+* 空間複雜度：O(n)   
+* 穩定度：穩定 
+### 流程圖：   
+![流程圖](https://github.com/yenchungLin/study/blob/master/picture/merge_sort.png)    
 [merge_sort程式碼]() 
 # [WEEK 8](https://github.com/yenchungLin/study/tree/master/WEEK%208)
-## [binary_tree]()
-> tree關係圖
->  ![tree](https://github.com/yenchungLin/study/blob/master/picture/Tree.jpg)     
-> binary_search_tree   
->  ![tree](https://github.com/yenchungLin/study/blob/master/picture/BST_insert.jpg)     
+## tree   
+### 說明：   
+![tree](https://github.com/yenchungLin/study/blob/master/picture/Tree.jpg)   
+### 種類   
+* 無序樹(自由樹)：樹的節點中沒有任何順需關係。   
+* 二元樹   
+* 霍夫曼樹：帶權路徑最短的二元樹。   
+* Btree：對讀寫操作進行最佳化自平衡的二元搜尋樹。
+## [binary_tree]()   
+### 原理說明：    
+binary tree是可以用陣列或是linked list的方式儲存。滿二元樹不會浪費資料空間。   
+binary tree的特殊行：   
+* 完全二元樹：除了最後一層外，其他層都是排滿的狀況，或是最後一層連續缺少幾個右邊的節點。   
+* 滿二元樹：每層的結點數都是最大節點數。  
+* AVL tree：任兩顆子樹的高度差不大於1。   
+* binary search tree     
+### 特色：   
+* 每個節點只能長出兩個子節點   
+* 長子節點的順徐是由左到右   
+* 節點個數可以為0   
 # [WEEK 9](https://github.com/yenchungLin/study/tree/master/WEEK%209)
 ## [binary_search_tree]()    
+### 原理說明：
+BST的優勢在於搜尋、插入的實踐複雜度交低(O n log n)。   
+BST的缺點是可能會出現不平衡的現象，或是退化成linked_list。      
+### 特色：
+ * 類似binary_tree   
+ * 一個縛結點最多有兩個子節點    
+ * 節點可以為空值      
+ * 左子節點的值 < 父節點的值 < 右子節點的值    
+ ![BST](https://github.com/yenchungLin/study/blob/master/picture/BST.png)  
 [binary_search_tree程式碼]() 
 # [WEEK 10](https://github.com/yenchungLin/study/tree/master/WEEK%210)
 ## [red_black_tree]()
-> red_black_tree因為當binary_search_tree弱化會變成linked_list，red_black_tree要平衡。insert、著色、旋轉（左、右）、delete、search、modify   
-> 特色：
->> 1.節點為紅色或是黑色，著色動作    
->> 2.root“必為”黑色   
->> 3.父節點是red，子節點為black     
->> 4.父節點是black，子節點為black或red    
->> 5.None為black6.從頭到尾，每條路徑的black數量要相同
-> 平衡：上一層要長滿，才能長下一層
+### 原理：
+為了解決binary_search_tree弱化會變成linked_list。   
+紅黑樹的從跟到葉子最長的路徑不可比最膽路徑多兩倍長。
+紅黑樹的插入、查詢、刪除節點的時間複雜度為O(n logn)。   
+紅黑樹的功能有：   
+* 顏色   
+* 插入   
+* 查詢   
+* 增加   
+* 旋轉
+### 特色：   
+* 節點為紅色或是黑色，著色動作    
+* root“必為”黑色   
+* 父節點是red，子節點為black     
+* 父節點是black，子節點為black或red    
+* None為black    
+* 從頭到尾，每條路徑的black數量要相同
+* 平衡：上一層要長滿，才能長下一層
+### 流程圖：   
+>  ![RBT](https://github.com/yenchungLin/study/blob/master/picture/RBT.png) 
 # [WEEK 11](https://github.com/yenchungLin/study/tree/master/WEEK%211)
 [hash]()   
 python進位轉換表
