@@ -1,5 +1,5 @@
 class Solution:
-    def findErrorNums(self, nums: List[int]) -> List[int]:
+    def findErrorNums(self, nums):
         nums.sort()
         ex_list = [i for i in range(1,len(nums))]
         ex_set = set(ex_list)
