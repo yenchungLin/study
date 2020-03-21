@@ -1,6 +1,6 @@
 # Tree:   
 ## 說明：   
->  ![tree](https://github.com/yenchungLin/study/blob/master/picture/Tree.jpg)   
+>  ![tree](https://github.com/yenchungLin/study/tree/master/資料結構與演算法/picture/Tree.jpg)   
 ## 種類   
 * 無序樹(自由樹)：樹的節點中沒有任何順需關係。   
 * 二元樹   
@@ -18,7 +18,7 @@ binary tree的特殊行：
 * 每個節點只能長出兩個子節點   
 * 長子節點的順徐是由左到右   
 * 節點個數可以為0   
->  ![BT](https://github.com/yenchungLin/study/blob/master/picture/BT.png)
+>  ![BT](https://github.com/yenchungLin/study/tree/master/資料結構與演算法/picture/BT.png)
 ## 資料來源： 
 https://zh.wikipedia.org/wiki/二叉树   
 https://zh.wikipedia.org/wiki/树_(数据结构)
