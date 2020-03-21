@@ -10,7 +10,7 @@
 應用：   
 * BFS      
 ## 流程圖：   
-![流程圖](https://github.com/yenchungLin/study/blob/master/picture/queue.png)
+![流程圖](https://github.com/yenchungLin/study/tree/master/資料結構與演算法/picture/queue.png)
 ## 參考資料：    
 https://alrightchiu.github.io/SecondRound/queue-introjian-jie-bing-yi-linked-listshi-zuo.html  
 http://alrightchiu.github.io/SecondRound/queue-yi-arrayshi-zuo-queue.html   
