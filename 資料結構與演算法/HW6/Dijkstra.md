@@ -6,9 +6,9 @@ Dijkstra利用BFS解決有像圖的最短路徑問題，「每次挑選當前最
 時間複雜度：    
 若不採用最小優先級佇列，為O(|V|^2)      
 採用斐波那契堆，O(|E|+|V|log|V|)     
-![path](https://github.com/yenchungLin/study/blob/master/picture/path.jpg)            
+![path](https://github.com/yenchungLin/study/tree/master/資料結構與演算法/picture/path.jpg)            
 ## 流程圖    
-![table](https://github.com/yenchungLin/study/blob/master/picture/table.jpg)  
+![table](https://github.com/yenchungLin/study/tree/master/資料結構與演算法/picture/table.jpg)  
 假設起始點是0，先建立一個表格，直的欄位表示由此點開始行走，橫的表示終點，中間的對應表格為其起始點到終點的短路徑。如果起始點無法到達該點，則以無限大表示。    
 1.由0開始走，在橫欄的地方標示已經走過，是最短路徑。0可以到1距離為4，0可以到7距離為8。然後我們找出表格中，除了已經揍過點以外的最小路徑，也就是4，表示說接下來由1開始尋找最短路徑。      
 2.0透過1的方式來找最短路徑，已經走點的距離不動，1可以走到2距離是4+8=12、1可以走到7距離是4+11=15，但是0直接走到7的距離是8，小於0經過1在走到7來得短，所以表格中依然存8。目前表格中最短路徑為8，所以由7找附近的點。         
@@ -19,14 +19,14 @@ Dijkstra利用BFS解決有像圖的最短路徑問題，「每次挑選當前最
 7.0透過8的方式來找最短路徑，已經走點的距離不動。因為8附近的點已經被都是最短路徑了，所以不用管。目前表格中最短路徑為19，所以由3找附近的點。   
 8.0透過3的方式來找最短路徑，已經走點的距離不動，3可以走到4距離是19+9=28，比原路徑長，所以不動。目前表格中最短路徑為21，所以由4找附近的點。     
 9.0透過4的方式來找最短路徑，已經走點的距離不動。但是我們發現點都已經有最短路徑了，所以結束。     
-![SP_picture](https://github.com/yenchungLin/study/blob/master/picture/SP_picture.jpg)      
+![SP_picture](https://github.com/yenchungLin/study/tree/master/資料結構與演算法/picture/SP_picture.jpg)      
 ## 程式碼學習歷程      
 想法一：因為在測值發現，起始點如果沒有到達的點，距離存的是0，但是這個如果存在minpoint(也就是暫時存起始點到其他點的最短距離)會出現問題，就是說無法從下一個點找到其它最短距離。所以要設一個超大的數字(maxnum)。     
 想法二：因為要判斷說點是不是最短路徑，所以會用到走訪的概念，也就是如果從起始點揍到某一點已經是最小值的，就不需要揍走一次的概念。    
 想法三：SP(存目前最短路徑)是list的形式，之後直接轉換成dict形式。    
 程式碼解說：    
 會先設定s為起始點、n為跑到第幾位、maxnum是一個很大很大的正數、minpoint是用來找下一個點的最短路徑。   
-![SP1](https://github.com/yenchungLin/study/blob/master/picture/SP1.jpg)   
+![SP1](https://github.com/yenchungLin/study/tree/master/資料結構與演算法/picture/SP1.jpg)   
 分成兩個狀況，   
 * 一開始的起始點進入   
 1.將起始點的路經存進SP，作為目前的最佳路徑。visit[起始點]改成True，表示已經走過有最短路徑。         
@@ -36,7 +36,7 @@ Dijkstra利用BFS解決有像圖的最短路徑問題，「每次挑選當前最
 (I)若起始點有到某得點，則minpoint要增加SP[n](也就是那個點的距離)     
 (II)若起始點沒有到某得點，則minpoint要增加maxnum     
 3.從minpoiont中找到下一個最短路徑，並找到對應的點後，回傳下一個最短路徑的點再執行一次程式    
-![SP2](https://github.com/yenchungLin/study/blob/master/picture/SP2.jpg)   
+![SP2](https://github.com/yenchungLin/study/tree/master/資料結構與演算法/picture/SP2.jpg)   
 * 非起始點   
 1.visit[n]改成True，表示已經走過有最短路徑。   
 2.尋找下一個最佳路徑時，也就是說要去找出起始點到各個點中的最短距離，    
@@ -51,11 +51,11 @@ Dijkstra利用BFS解決有像圖的最短路徑問題，「每次挑選當前最
 若已經走訪過的點，則maxnum存入minpoint中    
 3.從minpoiont中找到下一個最短路徑，並找到對應的點後，回傳下一個最短路徑的點再執行一次程式    
 4.若是全部點都走過了就將SP變成dict   
-![SP3](https://github.com/yenchungLin/study/blob/master/picture/SP3.png)     
-![SP4](https://github.com/yenchungLin/study/blob/master/picture/SP4.png)    
-![adddict](https://github.com/yenchungLin/study/blob/master/picture/adddict.png)     
-![SP_final](https://github.com/yenchungLin/study/blob/master/picture/SP_final.jpg)    
-![path](https://github.com/yenchungLin/study/blob/master/picture/path.jpg)       
+![SP3](https://github.com/yenchungLin/study/tree/master/資料結構與演算法/picture/SP3.png)     
+![SP4](https://github.com/yenchungLin/study/tree/master/資料結構與演算法/picture/SP4.png)    
+![adddict](https://github.com/yenchungLin/study/tree/master/資料結構與演算法/picture/adddict.png)     
+![SP_final](https://github.com/yenchungLin/study/tree/master/資料結構與演算法/picture/SP_final.jpg)    
+![path](https://github.com/yenchungLin/study/tree/master/資料結構與演算法/picture/path.jpg)       
 心得：    
 我覺得在寫Dijkstra的時候，存放一個超大的正數是一個很大的問題，因為如果怎麼設定超大的正數都有問題。    
 再寫BFS、DFS的時候，我不適用True跟False的方式來判斷節點是否有被走訪過，所以在寫走訪的問題時會需要考慮說，這個點的最佳路徑是不是要修改。    
@@ -68,7 +68,7 @@ Dijkstra利用BFS解決有像圖的最短路徑問題，「每次挑選當前最
 Kruskal是依照weight由小到大排列，並且不能形成一個環圈的概念。日常生活中的例子為：我要從甲地到乙地，中間可能會經過許多過路城市，但是我必須走最短距離到乙地，且中途的過路城市只能夠經過一次。        
 平均時間複雜度： O(|E|log|V|) (E:圖的邊、V:點)
 ## 流程圖            
-![MST_picture](https://github.com/yenchungLin/study/blob/master/picture/MST_picture.jpg)   
+![MST_picture](https://github.com/yenchungLin/study/tree/master/資料結構與演算法/picture/MST_picture.jpg)   
 1.將所有路徑從小到大排序。    
 2.建立一格parent表格，每一個點的parent目前先存-1，之後parent的點會存parent。    
 3.由最短路徑開始，也就是(2,3)=4，假設2是parent，在parent表格3的-1改成2，因為2是3的parent。     
