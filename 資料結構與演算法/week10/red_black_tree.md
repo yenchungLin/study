@@ -18,6 +18,6 @@
 * 從頭到尾，每條路徑的black數量要相同
 * 平衡：上一層要長滿，才能長下一層
 ## 流程圖：   
->  ![RBT](https://github.com/yenchungLin/study/blob/master/picture/RBT.png) 
+>  ![RBT](https://github.com/yenchungLin/study/tree/master/資料結構與演算法/picture/RBT.png) 
 ## 資料來源：   
 https://zh.wikipedia.org/wiki/红黑树   
