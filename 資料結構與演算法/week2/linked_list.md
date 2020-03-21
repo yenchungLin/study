@@ -3,15 +3,15 @@
 linked list是一種常見的資料結構，用來儲存資料，並用node指向下一個node串接起來    
 linked list的運作方式可分為：     
 *   走訪   
-![流程圖](https://github.com/yenchungLin/study/blob/master/picture/linked_list_visit.png)   
+![流程圖](https://github.com/yenchungLin/study/tree/master/資料結構與演算法/picture/linked_list_visit.png)   
 *   增加節點   
-![流程圖](https://github.com/yenchungLin/study/blob/master/picture/linked_list_add.png)  
+![流程圖](https://github.com/yenchungLin/study/tree/master/資料結構與演算法/picture/linked_list_add.png)  
 *   刪除節點    
-![流程圖](https://github.com/yenchungLin/study/blob/master/picture/linked_list_deletet.png)     
+![流程圖](https://github.com/yenchungLin/study/tree/master/資料結構與演算法/picture/linked_list_deletet.png)     
 *   反轉      
-![流程圖](https://github.com/yenchungLin/study/blob/master/picture/linked_list_reverse.png)     
+![流程圖](https://github.com/yenchungLin/study/tree/master/資料結構與演算法/picture/linked_list_reverse.png)     
 ## 流程圖：    
-![流程圖](https://github.com/yenchungLin/study/blob/master/picture/linked_list.png) 
+![流程圖](https://github.com/yenchungLin/study/tree/master/資料結構與演算法/picture/linked_list.png) 
 ## 比較：   
 linked list:   
 * 優點：資料增新刪除是動態的，時間複雜度O(1)。   
