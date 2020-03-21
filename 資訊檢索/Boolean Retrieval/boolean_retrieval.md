@@ -20,4 +20,4 @@
 ## Processing Boolean Queries
 找出兩個或兩個以上的交集。
 ## Query Optimizaton
-## 參考資料:
+![BR](https://github.com/yenchungLin/study/blob/master/資訊檢索/picture/BR.jpg)
