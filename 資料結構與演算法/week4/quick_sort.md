@@ -7,8 +7,8 @@
 * 空間複雜度：O(n)   
 * 穩定度：不穩定      
 ## 流程圖：   
-![流程圖](https://github.com/yenchungLin/study/blob/master/picture/quick_sort.png)      
-![流程圖2](https://github.com/yenchungLin/study/blob/master/picture/quick_sort2.png)    
+![流程圖](https://github.com/yenchungLin/study/tree/master/資料結構與演算法/picture/quick_sort.png)      
+![流程圖2](https://github.com/yenchungLin/study/tree/master/資料結構與演算法/picture/quick_sort2.png)    
 ## 參考資料：   
 http://alrightchiu.github.io/SecondRound/comparison-sort-quick-sortkuai-su-pai-xu-fa.html   
 http://notepad.yehyeh.net/Content/Algorithm/Sort/Quick/Quick.php
