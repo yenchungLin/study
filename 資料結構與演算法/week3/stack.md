@@ -10,7 +10,7 @@
 應用：   
 * DFS 
 ## 流程圖：   
-![流程圖](https://github.com/yenchungLin/study/blob/master/picture/stack.png)
+![流程圖](https://github.com/yenchungLin/study/tree/master/資料結構與演算法/picture/stack.png)
 ## 參考資料：   
 http://alrightchiu.github.io/SecondRound/stack-introjian-jie.html   
 https://zh.wikipedia.org/wiki/堆栈   
