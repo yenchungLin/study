@@ -1,5 +1,5 @@
 # 目錄
-1. Boolean Retrieval
+1. [Boolean Retrieval](https://github.com/yenchungLin/study/tree/master/資訊檢索#boolean-retrieval)
 # [Boolean Retrieval](https://github.com/yenchungLin/study/tree/master/資訊檢索/Boolean%20Retrieval)    
 ## 簡介
 布林檢索是一種簡單的資訊檢索方式，有兩個特點:             
