@@ -4,24 +4,24 @@
 *   漸少記憶體    
 *   加快運算時間    
 ## 目錄：    
-> *   [WEEK1](https://github.com/yenchungLin/study#week-1)：開學暖身週
-> *   [WEEK2](https://github.com/yenchungLin/study#week-2)：linked_list
-> *   [WEEK3](https://github.com/yenchungLin/study#week-3)：stack、queue
-> *   [WEEK4](https://github.com/yenchungLin/study#week-4)：insertion_sort、quick_sort
-> *   [WEEK5](https://github.com/yenchungLin/study#week-5)：放假
-> *   [WEEK6](https://github.com/yenchungLin/study#week-6)：heap_sort
-> *   [WEEK7](https://github.com/yenchungLin/study#week-7)： merge_sort
-> *   [WEEK8](https://github.com/yenchungLin/study#week-8)：binary_tree
-> *   [WEEK9](https://github.com/yenchungLin/study#week-9)：binary_search_tree
-> *   [WEEK10](https://github.com/yenchungLin/study#week-10)：red black tree
-> *   [WEEK11](https://github.com/yenchungLin/study#week-11)：hash table
-> *   [WEEK12](https://github.com/yenchungLin/study#week-12)：BFS     
-> *   [WEEK13](https://github.com/yenchungLin/study#week-13)：DFS  
-> *   [WEEK14](https://github.com/yenchungLin/study#week-14)：shortest_path 
-> *   [WEEK15](https://github.com/yenchungLin/study#week-15)：Minimum_Spanning_Tree(MST)  
-> *   [WEEK16](https://github.com/yenchungLin/study#week-16)：期末考複習週
-> *   [WEEK17](https://github.com/yenchungLin/study#week-17)：期末考週
-> *   [WEEK18](https://github.com/yenchungLin/study#week-18)：期末考週    
+> *   [WEEK1](https://github.com/yenchungLin/study/資料結構與演算法#week-1)：開學暖身週
+> *   [WEEK2](https://github.com/yenchungLin/study/資料結構與演算法#week-2)：linked_list
+> *   [WEEK3](https://github.com/yenchungLin/study/資料結構與演算法#week-3)：stack、queue
+> *   [WEEK4](https://github.com/yenchungLin/study/資料結構與演算法#week-4)：insertion_sort、quick_sort
+> *   [WEEK5](https://github.com/yenchungLin/study/資料結構與演算法#week-5)：放假
+> *   [WEEK6](https://github.com/yenchungLin/study/資料結構與演算法#week-6)：heap_sort
+> *   [WEEK7](https://github.com/yenchungLin/study/資料結構與演算法#week-7)： merge_sort
+> *   [WEEK8](https://github.com/yenchungLin/study/資料結構與演算法#week-8)：binary_tree
+> *   [WEEK9](https://github.com/yenchungLin/study/資料結構與演算法#week-9)：binary_search_tree
+> *   [WEEK10](https://github.com/yenchungLin/study/資料結構與演算法#week-10)：red black tree
+> *   [WEEK11](https://github.com/yenchungLin/study/資料結構與演算法#week-11)：hash table
+> *   [WEEK12](https://github.com/yenchungLin/study/資料結構與演算法#week-12)：BFS     
+> *   [WEEK13](https://github.com/yenchungLin/study/資料結構與演算法#week-13)：DFS  
+> *   [WEEK14](https://github.com/yenchungLin/study/資料結構與演算法#week-14)：shortest_path 
+> *   [WEEK15](https://github.com/yenchungLin/study/資料結構與演算法#week-15)：Minimum_Spanning_Tree(MST)  
+> *   [WEEK16](https://github.com/yenchungLin/study/資料結構與演算法#week-16)：期末考複習週
+> *   [WEEK17](https://github.com/yenchungLin/study/資料結構與演算法#week-17)：期末考週
+> *   [WEEK18](https://github.com/yenchungLin/study/資料結構與演算法#week-18)：期末考週    
 
 # [WEEK 1](https://github.com/yenchungLin/study/tree/master/WEEK%201)   
 開學週   
