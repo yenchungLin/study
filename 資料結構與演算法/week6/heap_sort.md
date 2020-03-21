@@ -12,6 +12,6 @@ heap sort是一個節點要先長滿兩個子節點，才能再往下長，這�
 * 空間複雜度：O(1)   
 * 穩定度：不穩定      
 ## 流程圖：   
-![流程圖](https://github.com/yenchungLin/study/blob/master/picture/heap_sort/heap_sort.png)    
+![流程圖](https://github.com/yenchungLin/study/tree/master/資料結構與演算法/picture/heap_sort/heap_sort.png)    
 ## 參考資料：   
 https://alrightchiu.github.io/SecondRound/comparison-sort-heap-sortdui-ji-pai-xu-fa.html    
