@@ -10,7 +10,7 @@
 * 遞迴法   
 * 疊代法   
 ## 流程圖：   
-![流程圖](https://github.com/yenchungLin/study/blob/master/picture/merge_sort.png)    
+![流程圖](https://github.com/yenchungLin/study/tree/master/資料結構與演算法/picture/merge_sort.png)    
 ## 參考資料：   
 https://alrightchiu.github.io/SecondRound/comparison-sort-merge-sorthe-bing-pai-xu-fa.html   
 https://zh.wikipedia.org/wiki/归并排序
