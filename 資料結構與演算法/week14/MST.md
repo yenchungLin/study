@@ -4,7 +4,7 @@
 Kruskal是依照weight由小到大排列，並且不能形成一個環圈的概念。日常生活中的例子為：我要從甲地到乙地，中間可能會經過許多過路城市，但是我必須走最短距離到乙地，且中途的過路城市只能夠經過一次。        
 平均時間複雜度： O(|E|log|V|) (E:圖的邊、V:點)
 ## 流程圖            
-![MST_picture](https://github.com/yenchungLin/study/blob/master/picture/MST_picture.jpg)   
+![MST_picture](https://github.com/yenchungLin/study/blob/master/資料結構與演算法/picture/MST_picture.jpg)   
 1.將所有路徑從小到大排序。    
 2.建立一格parent表格，每一個點的parent目前先存-1，之後parent的點會存parent。    
 3.由最短路徑開始，也就是(2,3)=4，假設2是parent，在parent表格3的-1改成2，因為2是3的parent。     
