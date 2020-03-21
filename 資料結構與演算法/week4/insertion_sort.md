@@ -10,7 +10,7 @@
 * 空間複雜度：O(1)   
 * 穩定度：不穩定      
 ## 流程圖：   
-![流程圖](https://github.com/yenchungLin/study/blob/master/picture/insertion_sort.gif)  
+![流程圖](https://github.com/yenchungLin/study/tree/master/資料結構與演算法/picture/insertion_sort.gif)  
 ## 參考資料：   
 http://alrightchiu.github.io/SecondRound/comparison-sort-insertion-sortcha-ru-pai-xu-fa.html   
 https://zh.wikipedia.org/zh-tw/插入排序   
