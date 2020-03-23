@@ -20,4 +20,4 @@
 文章中位置的索引
 ![term_vocabulary_and_posting_porter's](https://github.com/yenchungLin/study/blob/master/資訊檢索/picture/term_vocabulary_and_posting_porter's.jpg)   
 ![term_vocabulary_and_posting_ex](https://github.com/yenchungLin/study/blob/master/資訊檢索/picture/term_vocabulary_and_posting_ex.jpg)     
-# 如何標記    
+   
