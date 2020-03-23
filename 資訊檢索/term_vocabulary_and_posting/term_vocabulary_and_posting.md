@@ -14,10 +14,12 @@
 >* normalization(ex.U.S.A = USA、台灣大學 台大、日期格式、專有名詞)   
 >* Thesauri and Soundex(color = colour、同義字)   
 >* Lemmatization(還原字根)    
+>* Porter's Algorithm   
+![term_vocabulary_and_posting_porter's](https://github.com/yenchungLin/study/blob/master/資訊檢索/picture/term_vocabulary_and_posting_porter's.jpg)   
+![term_vocabulary_and_posting_ex](https://github.com/yenchungLin/study/blob/master/資訊檢索/picture/term_vocabulary_and_posting_ex.jpg)   
 3. linguistic modules(大小寫、單複數轉換)   
 4. 字出現在哪篇索引   
 ## Positional index   
 文章中位置的索引
-![term_vocabulary_and_posting_porter's](https://github.com/yenchungLin/study/blob/master/資訊檢索/picture/term_vocabulary_and_posting_porter's.jpg)   
-![term_vocabulary_and_posting_ex](https://github.com/yenchungLin/study/blob/master/資訊檢索/picture/term_vocabulary_and_posting_ex.jpg)     
+![term_vocabulary_and_posting_positional_index](https://github.com/yenchungLin/study/blob/master/資訊檢索/picture/term_vocabulary_and_posting_positional_index.jpg)      
    
