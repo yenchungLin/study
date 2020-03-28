@@ -9,7 +9,7 @@
 > * [推薦系統(Recommendation)]()
 ## 關聯規則(Association Rule)    
 名詞解釋：   
-![關聯規則]()
+![關聯規則](https://github.com/yenchungLin/study/blob/master/資料探勘/picture/關聯規則.jpg)
 * Apriori、FP Tree
 ## 資料分類(Classification)
 * KNN、SVN、ANN、決策樹、貝氏
