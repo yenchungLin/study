@@ -27,4 +27,4 @@
 ![br_quiz03](https://github.com/yenchungLin/study/blob/master/資訊檢索/picture/br_quiz03.jpg)    
 ![br_quiz03_ans](https://github.com/yenchungLin/study/blob/master/資訊檢索/picture/br_quiz03_ans.jpg) 
 ## Query Optimizaton
-![BR](https://github.com/yenchungLin/study/blob/tree/資訊檢索/picture/BR.jpg)
+![BR](https://github.com/yenchungLin/study/blob/master/資訊檢索/picture/BR.jpg)
