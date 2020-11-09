@@ -1,6 +1,6 @@
 # 目錄
 1. [Boolean Retrieval](https://github.com/yenchungLin/study/tree/master/資訊檢索#boolean-retrieval)   
-2. [ step in inverted index construction](https://github.com/yenchungLin/study/tree/master/資訊檢索#step-in-inverted-index-construction)
+2. [step in inverted index construction](https://github.com/yenchungLin/study/tree/master/資訊檢索#step-in-inverted-index-construction)
 # [Boolean Retrieval](https://github.com/yenchungLin/study/tree/master/資訊檢索/Boolean%20Retrieval)    
 ## 簡介
 布林檢索是一種簡單的資訊檢索方式，有兩個特點:             
@@ -13,7 +13,7 @@
 * 在大型文件中，搜尋快速     
 * 更容易做配對操作    
 * 依據排序檢索    
-# step in inverted index construction    
+# [step in inverted index construction]()    
 ## 簡介
 * 定義文件index   
 * 分開文字/斷詞(tokenize)    
